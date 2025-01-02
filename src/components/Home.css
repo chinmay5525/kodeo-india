@@ -434,8 +434,8 @@
 
 .custom-input {
   background: transparent !important;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-right: 20px;
   font-family: 'Aino', sans-serif;
   padding-left: 20px;
@@ -469,7 +469,7 @@
 
 .custom-checkbox .form-check-label {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 14px;
 
   font-family: 'Aino', sans-serif;
   font-weight: 300;
@@ -484,10 +484,12 @@
   background-color: #f03e3e;
   border-color: #f03e3e;
 }
-.stats-number{
+
+.stats-number {
   font-size: 2rem;
-  font-weight: 300!important;
+  font-weight: 300 !important;
 }
+
 .blogs-heading {
   font-size: 3rem;
 }
@@ -575,13 +577,17 @@
 }
 
 @media (max-width: 768px) {
-  .stats-number{
+  .stats-number {
     font-size: 1.3rem;
-    font-weight: 300!important;
+    font-weight: 300 !important;
   }
 
   .sectors-section {
     padding: 0.5rem;
+  }
+
+  .card-title-blog {
+    font-size: 18px !important;
   }
 
   .sectors {
@@ -605,7 +611,9 @@
     flex-direction: column;
   }
 
-
+  .custom-checkbox .form-check-label{
+    font-size: 12px;
+  }
   .grid-container {
     padding: var(--mobile-padding) !important;
   }
@@ -795,8 +803,8 @@
   width: 100%;
   max-width: 400px;
   font-family: 'Aino', sans-serif;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-right: 20px;
   padding-left: 20px;
   background: transparent;
@@ -888,6 +896,15 @@
     padding: 3rem 0.5rem;
   }
 
+  .sectors-subhead {
+    font-size: 18px !important;
+  }
+
+  .card-title-blog {
+    font-size: 18px !important;
+  }
+
+
   .contact-section-flex {
     flex-direction: column;
     gap: 0;
@@ -969,7 +986,8 @@
   font-family: 'Aino', sans-serif;
   color: #fff;
   font-size: 1.1rem;
-  padding: 10px 20px;
+  font-weight: 300 !important;
+  padding: 7px 20px !important;
   border-radius: 0;
   width: 100%;
   text-align: center;
@@ -978,7 +996,7 @@
 
 .nav-tabs .nav-link.active-tab {
   color: #fff;
-
+  font-weight: 300 !important;
   font-family: 'Aino', sans-serif;
   border: 1px solid #fff;
   border-radius: 50px;

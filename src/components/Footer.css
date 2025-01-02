@@ -33,6 +33,10 @@
         padding: var(--mobile-padding);
     }
 
+    .footer-privacy {
+        font-size: 13px;
+    }
+
     .footer {
         flex-direction: column;
         gap: 2rem;

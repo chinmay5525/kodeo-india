@@ -51,7 +51,7 @@ const Footer = () => {
                   
                 </div>
                 <hr></hr>
-                <p>Kodeo Limited Copyright © 2024 • Company Number 14647333 • VAT Registered GB 434150821</p>
+                <p className='footer-privacy'>Kodeo Limited Copyright © 2024 • Company Number 14647333 • VAT Registered GB 434150821</p>
             </section>
         </div>
     )
