@@ -114,7 +114,8 @@
 
   .industries-subhead {
     margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-family: 'Aino', sans-serif;
   }
 }
 
@@ -145,9 +146,10 @@
   }
 
   .industries-subhead {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0.8rem;
-    font-weight: 800;
+    font-weight: 600;
+    font-family: 'Aino', sans-serif;
   }
 }
 
