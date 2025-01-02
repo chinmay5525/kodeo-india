@@ -943,7 +943,7 @@
 
 .nav-tabs .nav-link.active-tab {
   color: #fff;
-  border-top: 4px solid #fff;
+  border-top: 2px solid #fff;
   background-color: transparent;
 }
 
@@ -969,16 +969,16 @@
 }
 
 .subscribe-btn {
-  background-color: transparent;
-  border: 2px solid #fff;
+  background-color: #F6320B;
+  border: none;
   color: #fff;
   padding: 10px 25px;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: all 0.3s ease;
 }
 
 .subscribe-btn:hover {
-  background-color: #fff;
+  background-color: #F6320B;
   color: #232366;
 }
 
