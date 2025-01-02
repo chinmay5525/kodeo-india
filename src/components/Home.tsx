@@ -293,7 +293,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        
+
             <section>
                 <img src={ImageOne} alt="fireSpot" loading="lazy" className="responsive-image" />
             </section>
@@ -375,45 +375,45 @@ const Home = () => {
 
 
 
+
             <section className='sustain'>
-            <section className='sustain'>
-    <div className="container px-0">
-        {/* Added px-0 to remove padding */}
-        <div className="sustain-cot">
-            <ul className="nav nav-tabs border-0">
-                {Object.keys(tabsContent).map((key) => (
-                    <li className="nav-item" key={key}>
-                        <button
-                            className={`nav-link ${activeTab === key ? "active-tab" : ""}`}
-                            onClick={() => setActiveTab(key)}
-                        >
-                            {tabsContent[key].title}
-                        </button>
-                    </li>
-                ))}
-            </ul>
-            <div className="tab-content mt-4">
-                {/* Changed row class to have no gutters */}
-                <div className="row g-0 align-items-center">
-                    <div className="col-md-6 pe-md-4">
-                        {/* Added pe-md-4 for spacing between columns on md+ screens */}
-                        <h2>{tabsContent[activeTab].title}</h2>
-                        <p>{tabsContent[activeTab].description}</p>
-                        <button className="subscribe-btn">Learn More</button>
-                    </div>
-                    <div className="col-md-6 text-center">
-                        <img
-                            src={tabsContent[activeTab].image}
-                            alt={tabsContent[activeTab].title}
-                            className="img-fluid"
-                        />
+                <div className="container px-0">
+                    {/* Added px-0 to remove padding */}
+                    <div className="sustain-cot">
+                        <ul className="nav nav-tabs border-0">
+                            {Object.keys(tabsContent).map((key) => (
+                                <li className="nav-item" key={key}>
+                                    <button
+                                        className={`nav-link ${activeTab === key ? "active-tab" : ""}`}
+                                        onClick={() => setActiveTab(key)}
+                                    >
+                                        {tabsContent[key].title}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                        <div className="tab-content mt-4">
+                            {/* Changed row class to have no gutters */}
+                            <div className="row g-0 align-items-center">
+                                <div className="col-md-6 pe-md-4">
+                                    {/* Added pe-md-4 for spacing between columns on md+ screens */}
+                                    <h2>{tabsContent[activeTab].title}</h2>
+                                    <p>{tabsContent[activeTab].description}</p>
+                                    <button className="subscribe-btn-2">Learn More</button>
+                                </div>
+                                <div className="col-md-6 text-center">
+                                    <img
+                                        src={tabsContent[activeTab].image}
+                                        alt={tabsContent[activeTab].title}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
             </section>
+
 
             <section className='location-section'>
                 <div>

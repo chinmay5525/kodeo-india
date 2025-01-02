@@ -968,16 +968,16 @@
   margin-top: 20px;
 }
 
-.subscribe-btn {
-  background-color: #F6320B;
-  border: none;
-  color: #fff;
-  padding: 10px 25px;
+.subscribe-btn-2 {
+  background-color: transparent;
+  border: 2px solid #F6320B;
+  color: #F6320B;
+  padding: 8px 20px;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 
-.subscribe-btn:hover {
+.subscribe-btn-2:hover {
   background-color: #F6320B;
   color: #232366;
 }
