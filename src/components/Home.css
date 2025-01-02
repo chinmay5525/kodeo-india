@@ -52,6 +52,7 @@
   .heading-container,
   .grid-container {
     padding: 3rem;
+
   }
 
   .industries-heading {
@@ -88,6 +89,7 @@
     flex: 1 1 auto;
     /* Adjust flex growth/shrink if needed */
     padding: 2rem;
+
   }
 
   .industries-heading {
@@ -126,6 +128,7 @@
   .heading-container,
   .grid-container {
     padding: var(--mobile-padding);
+
   }
 
   .industries-heading {
@@ -554,9 +557,9 @@
 
   .btn {
     padding: 8px 16px !important;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -639,7 +642,8 @@
   }
 
   .locations {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.1rem;
   }
 
   .work-image {
@@ -820,7 +824,10 @@
 
 .subscribe-btn {
   margin-top: clamp(1rem, 3vw, 1.6rem);
-
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
   font-family: 'Aino', sans-serif;
   padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
   background-color: var(--primary-color);
@@ -926,14 +933,6 @@
     padding: 0;
   }
 
-  .subscribe-btn {
-    width: 40%;
-    max-width: 500px;
-    font-weight: 600;
-    text-align: center;
-    justify-content: center;
-    margin-left: auto;
-  }
 
   .content-wrapper {
     gap: 1rem;

@@ -419,8 +419,10 @@ const Home = () => {
             <section className='location-section'>
                 <div>
                     <div>
-                        <h1 className='locations'>We are Culture-Driven UI UX <br />
-                            & Development Agency </h1>
+                        <h1 className="locations">
+                            Culture-Driven UI/UX <br />
+                            & Development Excellence
+                        </h1>
                         <p className='location-subheading'>We're a group of 180+ creative minds spread <br /> across 4 countries touching billions of lives <br />through design.</p>
                         <div className="countries-container">
                             <div className="countries-grid">
