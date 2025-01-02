@@ -156,7 +156,7 @@ const Home = () => {
                                 <div className="row justify-content-between px-md-5">
                                     {stats.map((stat, index) => (
                                         <div key={index} className="col-6 col-md-3 text-center mb-3 mb-md-0">
-                                            <h2 className="fw-bold mb-0">{stat.number}</h2>
+                                            <p className="fw-bold stats-number mb-0">{stat.number}</p>
                                             <p className="text-muted mb-0">{stat.label}</p>
                                         </div>
                                     ))}
@@ -171,7 +171,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-12 p-0">
                             <h1 className="main-heading mb-4">
-                                At KODEO, we offer expert digital services from platform consulting to digital management, designed to refine and elevate your online presence.
+                                At KODEO, we offer expert digital services from platform consulting to digital management, designed to refine and elevate your <br></br>online presence.
                             </h1>
 
                             <p className="sub-heading mb-4">
@@ -220,7 +220,7 @@ const Home = () => {
                             <div className="mb-5">
                                 <h5 className='case-studies-heading'>Transforming the Smart City Vision: Lucknow AI City</h5>
 
-                                <p className='text-muted'> 
+                                <p className='text-muted'>
                                     Kodeo partnered with Lucknow AI City to design an intuitive digital platform that reflects the city's forward-thinking vision. Our team crafted a clean, user-centric interface that makes complex data easily accessible for residents and stakeholders.
                                 </p>
                             </div>
@@ -310,60 +310,60 @@ const Home = () => {
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Fintech</h5>
                                     <p className='text-muted'>Revolutionizing financial services through technology by enabling seamless transactions, improved user experiences, and secure solutions for global financial operations.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Health Tech</h5>
                                     <p className='text-muted'>Empowering healthcare with innovative solutions, from patient monitoring wearables to telemedicine, and streamlined electronic health records for better patient outcomes.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Sports</h5>
                                     <p className='text-muted'>Enhancing athletic performance and fan experiences with data analytics, wearable technology, and immersive digital solutions for the sports industry.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Enterprise</h5>
                                     <p className='text-muted'>Driving enterprise growth with tailored digital solutions, optimizing workflows, and enabling smart business operations for large organizations.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>E-Commerce/Marketplace</h5>
                                     <p className='text-muted'>Transforming online shopping experiences through scalable platforms, secure payment systems, and personalized customer engagement strategies.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>IT/Consulting</h5>
                                     <p className='text-muted'>Providing expertise in technology integration, infrastructure development, and strategic consulting to help businesses thrive in the digital age.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Media and Entertainment</h5>
                                     <p className='text-muted'>Innovating content delivery, enhancing user engagement, and driving new revenue streams in the media and entertainment industry.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Internet of Things</h5>
                                     <p className='text-muted'>Connecting devices and systems to create smart environments, improving efficiency, and offering new levels of convenience in everyday life.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Venture Capitalists</h5>
                                     <p className='text-muted'>Supporting startups and innovation with strategic investments, fostering growth in diverse industries through financial backing.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>For a Cause</h5>
                                     <p className='text-muted'>Leveraging technology to promote social good and empower communities, and address pressing global challenges effectively.</p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +399,8 @@ const Home = () => {
                                     {/* Added pe-md-4 for spacing between columns on md+ screens */}
                                     <h2>{tabsContent[activeTab].title}</h2>
                                     <p>{tabsContent[activeTab].description}</p>
-                                    <button className="subscribe-btn-2">Learn More</button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
+
                                 </div>
                                 <div className="col-md-6 text-center">
                                     <img
@@ -423,13 +424,13 @@ const Home = () => {
                         <p className='location-subheading'>We're a group of 180+ creative minds spread <br /> across 4 countries touching billions of lives <br />through design.</p>
                         <div className="countries-container">
                             <div className="countries-grid">
-                                <div>India <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z"/></svg></div>
-                                <div>United Kingdom</div>
-                                <div>UAE</div>
-                                <div>Singapore</div>
-                                <div>Russia</div>
-                                <div>South Africa</div>
-                                <div>Kazakhstan</div>
+                                <div>India <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>United Kingdom <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>UAE <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>Singapore <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>Russia <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>South Africa <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
                             </div>
                         </div>
                         <div className='pt-5 pb-3'>
@@ -516,7 +517,7 @@ const Home = () => {
                     <div className='content-wrapper'>
                         <div className='text-content'>
                             <h1 className='headline'>
-                                Tailored to deliver the best<br /> for your business
+                                Tailored to deliver the best for your <br></br>business
                             </h1>
                             <p className='description'>A flexible and adaptive process that helps<br /> businesses launch and scale quickly.</p>
                         </div>
@@ -546,21 +547,21 @@ const Home = () => {
                                     <img src={SectorOne} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Governments</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
                             </div>

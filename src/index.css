@@ -5,8 +5,10 @@ body {
 }
 
 h1,h2,h3,h4,h6 {
-  font-family: 'PPFormula', serif;
+  font-family: 'SFFourche', serif;
+
   font-weight: 900;
+  font-style: italic;
   color: #232366;
 }
 

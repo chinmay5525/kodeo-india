@@ -206,6 +206,8 @@
   /* Adjust the value to control the space */
 }
 
+
+
 .sectors-row {
   gap: 3rem;
 }
@@ -278,7 +280,7 @@
 .countries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  gap: 0rem;
   padding-right: 20rem;
   /* Adds extra space on the right */
 
@@ -318,7 +320,7 @@
 }
 
 .main-heading {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 900;
   line-height: 1.2;
   color: #232366;
@@ -482,7 +484,9 @@
   background-color: #f03e3e;
   border-color: #f03e3e;
 }
-
+.stats-number{
+  font-size: 2rem;
+}
 .blogs-heading {
   font-size: 3rem;
 }
@@ -511,7 +515,7 @@
 
 /* Base responsive styles */
 :root {
-  --mobile-heading-size: 2rem;
+  --mobile-heading-size: 1.7rem;
   --mobile-padding: 1rem;
 }
 
@@ -570,7 +574,9 @@
 }
 
 @media (max-width: 768px) {
-
+  .stats-number{
+    font-size: 1.3rem;
+  }
 
   .sectors-section {
     padding: 0.5rem;
@@ -972,7 +978,9 @@
   color: #fff;
 
   font-family: 'Aino', sans-serif;
-  border-top: 1px solid #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin: 0;
   background-color: transparent;
 }
 
@@ -1007,10 +1015,6 @@
   transition: all 0.3s ease;
 }
 
-.subscribe-btn-2:hover {
-  background-color: #F6320B;
-  color: #232366;
-}
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -1062,7 +1066,7 @@
 
 @media (max-width: 576px) {
   .nav-tabs .nav-link {
-    font-size: 15px;
+    font-size: 14px;
     padding: 5px 10px;
     font-weight: 600;
   }
