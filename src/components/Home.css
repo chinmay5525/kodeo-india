@@ -190,11 +190,17 @@
 }
 
 .learn-more-2 {
-  font-size: 17px;
-  text-decoration: underline;
+  font-size: 14px;
+  border: 1px solid;
+  border-radius: 50px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: 'Aino', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
   margin-top: 0.75rem;
-  font-weight: 500;
-  text-underline-offset: 6px;
+
   /* Adjust the value to control the space */
 }
 
@@ -279,6 +285,7 @@
 
 .countries-grid div {
   padding: 0.8rem;
+  font-size: 17px;
   font-family: 'Aino', sans-serif;
   background: #D9D9D9;
   border: none;
@@ -341,7 +348,7 @@
   background-color: #D9D9D9;
   border-radius: 50px;
   padding: 12px 24px;
-  font-size: 19px;
+  font-size: 17px;
   font-family: 'Aino', sans-serif;
   font-weight: 600;
   cursor: pointer;
@@ -447,10 +454,12 @@
   box-shadow: none !important;
   border-bottom-color: rgba(255, 255, 255, 0.8) !important;
 }
-.form-control{
+
+.form-control {
   font-family: 'Aino', sans-serif;
   font-weight: 300;
 }
+
 .custom-checkbox .form-check-input {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.4);
@@ -794,7 +803,7 @@
 
 .subscribe-btn {
   margin-top: clamp(1rem, 3vw, 1.6rem);
- 
+
   font-family: 'Aino', sans-serif;
   padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
   background-color: var(--primary-color);
@@ -920,12 +929,17 @@
 .nav-tabs {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;  /* Prevent wrapping */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
   gap: 10px;
-  overflow-x: auto;  /* Enable horizontal scrolling */
-  -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
-  scrollbar-width: none;  /* Hide scrollbar for Firefox */
-  -ms-overflow-style: none;  /* Hide scrollbar for IE/Edge */
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on iOS */
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE/Edge */
 }
 
 /* Hide scrollbar for Chrome/Safari */
@@ -935,8 +949,10 @@
 
 .nav-tabs .nav-item {
   margin: 0 10px;
-  flex: 0 0 auto;  /* Prevent shrinking */
-  white-space: nowrap;  /* Prevent text wrapping */
+  flex: 0 0 auto;
+  /* Prevent shrinking */
+  white-space: nowrap;
+  /* Prevent text wrapping */
 }
 
 .nav-tabs .nav-link {
@@ -998,7 +1014,7 @@
     font-size: 1.1rem;
     padding: 8px 15px;
   }
-  
+
   .sustain-cot {
     padding: 3rem 0;
   }
@@ -1016,7 +1032,8 @@
   .nav-tabs .nav-link {
     font-size: 1rem;
     padding: 6px 12px;
-    min-width: max-content;  /* Ensure text doesn't wrap */
+    min-width: max-content;
+    /* Ensure text doesn't wrap */
   }
 
   .tab-content .row {
@@ -1045,12 +1062,13 @@
     padding: 5px 10px;
     font-weight: 600;
   }
- 
-  .nav-tabs{
+
+  .nav-tabs {
     gap: 0;
     justify-content: space-between;
     padding: 0.50rem;
   }
+
   .sustain-cot {
     padding: 2rem 0;
   }

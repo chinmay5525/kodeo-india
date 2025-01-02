@@ -310,60 +310,60 @@ const Home = () => {
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Fintech</h5>
                                     <p>Revolutionizing financial services through technology by enabling seamless transactions, improved user experiences, and secure solutions for global financial operations.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Health Tech</h5>
                                     <p>Empowering healthcare with innovative solutions, from patient monitoring wearables to telemedicine, and streamlined electronic health records for better patient outcomes.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Sports</h5>
                                     <p>Enhancing athletic performance and fan experiences with data analytics, wearable technology, and immersive digital solutions for the sports industry.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Enterprise</h5>
                                     <p>Driving enterprise growth with tailored digital solutions, optimizing workflows, and enabling smart business operations for large organizations.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>E-Commerce/Marketplace</h5>
                                     <p>Transforming online shopping experiences through scalable platforms, secure payment systems, and personalized customer engagement strategies.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>IT/Consulting</h5>
                                     <p>Providing expertise in technology integration, infrastructure development, and strategic consulting to help businesses thrive in the digital age.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Media and Entertainment</h5>
                                     <p>Innovating content delivery, enhancing user engagement, and driving new revenue streams in the media and entertainment industry.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Internet of Things</h5>
                                     <p>Connecting devices and systems to create smart environments, improving efficiency, and offering new levels of convenience in everyday life.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Venture Capitalists</h5>
                                     <p>Supporting startups and innovation with strategic investments, fostering growth in diverse industries through financial backing.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>For a Cause</h5>
                                     <p>Leveraging technology to promote social good and empower communities, and address pressing global challenges effectively.</p>
-                                    <h5 className='learn-more-2'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                         </div>
@@ -546,19 +546,22 @@ const Home = () => {
                                     <img src={SectorOne} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Governments</h5>
                                     <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <h5 className='learn-more'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
                                     <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <h5 className='learn-more'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
                                     <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <h5 className='learn-more'>Learn More</h5>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
+
                                 </div>
                             </div>
                         </div>
