@@ -110,9 +110,19 @@ const Home = () => {
             description: "Your innovation description here",
             image: "/path/to/innovation-image.jpg"
         },
-        impact: {
-            title: "Impact",
+        digital: {
+            title: "Digital Services",
             description: "Your impact description here",
+            image: "/path/to/impact-image.jpg"
+        },
+        energy: {
+            title: "Energy",
+            description: "Your Energy description here",
+            image: "/path/to/impact-image.jpg"
+        },
+        media: {
+            title: "Media & Entertainment",
+            description: "Your Media description here",
             image: "/path/to/impact-image.jpg"
         }
     };
