@@ -220,14 +220,14 @@ const Home = () => {
                             <div className="mb-5">
                                 <h5 className='case-studies-heading'>Transforming the Smart City Vision: Lucknow AI City</h5>
 
-                                <p>
+                                <p className='text-muted'> 
                                     Kodeo partnered with Lucknow AI City to design an intuitive digital platform that reflects the city's forward-thinking vision. Our team crafted a clean, user-centric interface that makes complex data easily accessible for residents and stakeholders.
                                 </p>
                             </div>
                             <div>
                                 <h5 className='case-studies-heading'>Innovating for Social Impact: Kumbathon’s Digital Transformation</h5>
 
-                                <p>
+                                < p className='text-muted'>
                                     For Kumbathon, an initiative focused on solving social challenges, Kodeo created a vibrant and engaging online presence. By aligning the branding with the spirit of innovation, we developed a platform that effectively communicates Kumbathon’s mission, showcases its projects, and attracts collaborators.
                                 </p>
                             </div>
@@ -241,14 +241,14 @@ const Home = () => {
                             <div className="mb-5">
                                 <h5 className='case-studies-heading'>Revolutionizing Banking Experiences: Utkarsh Small Finance Bank</h5>
 
-                                <p>
+                                <p className='text-muted'>
                                     Kodeo collaborated with Utkarsh Small Finance Bank to enhance their digital banking platforms. Through user research, we identified key pain points and reimagined the user journey for their mobile app and website.
                                 </p>
                             </div>
                             <div>
                                 <h5 className='case-studies-heading'>Transforming Healthcare Access: Fortis Mobile App Revamp</h5>
 
-                                <p>
+                                <p className='text-muted'>
                                     Kodeo redesigned the Fortis Hospitals mobile app to provide a more user-friendly and comprehensive patient experience. From online appointment scheduling to accessing medical records and teleconsultations, the revamped app prioritized patient convenience.
                                 </p>
                             </div>
@@ -268,7 +268,7 @@ const Home = () => {
                         <div className="col-md-4">
                             <div className="bg-light mb-3" style={{ height: "250px" }}></div>
                             <h5 className='case-studies-heading'>Optimizing Logistics: Adani Group’s Supply Chain Dashboard</h5>
-                            <p>Kodeo developed a cutting-edge supply chain management dashboard for the Adani Group. By providing real-time insights, predictive analytics, and intuitive navigation, we enabled the Adani team to optimize logistics and enhance operational efficiency.
+                            <p className='text-muted'>Kodeo developed a cutting-edge supply chain management dashboard for the Adani Group. By providing real-time insights, predictive analytics, and intuitive navigation, we enabled the Adani team to optimize logistics and enhance operational efficiency.
 
                             </p>
                         </div>
@@ -276,7 +276,7 @@ const Home = () => {
                             <div className="bg-light mb-3" style={{ height: "250px" }}></div>
                             <h5 className='case-studies-heading'>Designing for the Metaverse</h5>
 
-                            <p>
+                            <p className='text-muted'>
                                 Creating intuitive and engaging interfaces for the metaverse
                                 requires innovation.
                             </p>
@@ -285,7 +285,7 @@ const Home = () => {
                             <div className="bg-light mb-3" style={{ height: "250px" }}></div>
 
                             <h5 className='case-studies-heading'>Inclusive Digital Spaces</h5>
-                            <p>
+                            <p className='text-muted'>
                                 Designing digital spaces that are accessible to everyone fosters
                                 inclusivity.
                             </p>
@@ -309,60 +309,60 @@ const Home = () => {
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Fintech</h5>
-                                    <p>Revolutionizing financial services through technology by enabling seamless transactions, improved user experiences, and secure solutions for global financial operations.</p>
+                                    <p className='text-muted'>Revolutionizing financial services through technology by enabling seamless transactions, improved user experiences, and secure solutions for global financial operations.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Health Tech</h5>
-                                    <p>Empowering healthcare with innovative solutions, from patient monitoring wearables to telemedicine, and streamlined electronic health records for better patient outcomes.</p>
+                                    <p className='text-muted'>Empowering healthcare with innovative solutions, from patient monitoring wearables to telemedicine, and streamlined electronic health records for better patient outcomes.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Sports</h5>
-                                    <p>Enhancing athletic performance and fan experiences with data analytics, wearable technology, and immersive digital solutions for the sports industry.</p>
+                                    <p className='text-muted'>Enhancing athletic performance and fan experiences with data analytics, wearable technology, and immersive digital solutions for the sports industry.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Enterprise</h5>
-                                    <p>Driving enterprise growth with tailored digital solutions, optimizing workflows, and enabling smart business operations for large organizations.</p>
+                                    <p className='text-muted'>Driving enterprise growth with tailored digital solutions, optimizing workflows, and enabling smart business operations for large organizations.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>E-Commerce/Marketplace</h5>
-                                    <p>Transforming online shopping experiences through scalable platforms, secure payment systems, and personalized customer engagement strategies.</p>
+                                    <p className='text-muted'>Transforming online shopping experiences through scalable platforms, secure payment systems, and personalized customer engagement strategies.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>IT/Consulting</h5>
-                                    <p>Providing expertise in technology integration, infrastructure development, and strategic consulting to help businesses thrive in the digital age.</p>
+                                    <p className='text-muted'>Providing expertise in technology integration, infrastructure development, and strategic consulting to help businesses thrive in the digital age.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Media and Entertainment</h5>
-                                    <p>Innovating content delivery, enhancing user engagement, and driving new revenue streams in the media and entertainment industry.</p>
+                                    <p className='text-muted'>Innovating content delivery, enhancing user engagement, and driving new revenue streams in the media and entertainment industry.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Internet of Things</h5>
-                                    <p>Connecting devices and systems to create smart environments, improving efficiency, and offering new levels of convenience in everyday life.</p>
+                                    <p className='text-muted'>Connecting devices and systems to create smart environments, improving efficiency, and offering new levels of convenience in everyday life.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
                             <div className='row grid-row'>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>Venture Capitalists</h5>
-                                    <p>Supporting startups and innovation with strategic investments, fostering growth in diverse industries through financial backing.</p>
+                                    <p className='text-muted'>Supporting startups and innovation with strategic investments, fostering growth in diverse industries through financial backing.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                                 <div className='col-sm grid-col'>
                                     <h5 className='industries-subhead'>For a Cause</h5>
-                                    <p>Leveraging technology to promote social good and empower communities, and address pressing global challenges effectively.</p>
+                                    <p className='text-muted'>Leveraging technology to promote social good and empower communities, and address pressing global challenges effectively.</p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
                                 </div>
                             </div>
@@ -477,7 +477,7 @@ const Home = () => {
                                         <div className="col-md-8">
                                             <div className="card-body">
                                                 <h5 className="card-title-blog" style={{ fontWeight: '600', fontSize: '20px', marginBottom: '1rem' }}>{blog.title}</h5>
-                                                <p className="card-text">{blog.description}</p>
+                                                <p className="card-text text-muted">{blog.description}</p>
                                                 <p className="card-text">
                                                     <small className="text-muted">Posted on {blog.date}</small>
                                                 </p>
@@ -500,7 +500,7 @@ const Home = () => {
                                             />
                                             <div className="card-body">
                                                 <h5 className="card-title-blog" style={{ fontWeight: '600', fontSize: '20px', marginBottom: '1rem' }}>{blog.title}</h5>
-                                                <p className="card-text">{blog.description}</p>
+                                                <p className="card-text text-muted">{blog.description}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -545,21 +545,21 @@ const Home = () => {
                                 <div className="col-sm">
                                     <img src={SectorOne} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Governments</h5>
-                                    <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
+                                    <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
 
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
-                                    <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
+                                    <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
 
                                 </div>
                                 <div className="col-sm">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
-                                    <p>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
+                                    <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z"/></svg></button>
 
                                 </div>
