@@ -614,9 +614,10 @@
     flex-direction: column;
   }
 
-  .custom-checkbox .form-check-label{
+  .custom-checkbox .form-check-label {
     font-size: 12px;
   }
+
   .grid-container {
     padding: var(--mobile-padding) !important;
   }
@@ -780,12 +781,6 @@
   min-width: min(100%, 300px);
 }
 
-.headline {
-  font-size: clamp(1.75rem, 5vw, 3rem);
-  text-transform: unset;
-  line-height: 1.2;
-  margin-bottom: clamp(1rem, 3vw, 1.5rem);
-}
 
 .description {
   font-size: clamp(1rem, 2vw, 1.1rem);
@@ -1052,6 +1047,10 @@
     justify-content: flex-start;
   }
 
+  .headline {
+    font-size: 2.5rem !important;
+  }
+
   .nav-tabs .nav-item {
     margin: 0 5px;
   }
@@ -1111,5 +1110,56 @@
   .subscribe-btn {
     padding: 8px 20px;
     font-size: 0.9rem;
+  }
+}
+
+.landing-section {
+  position: relative;
+}
+
+.dots-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.animated-dot {
+  position: absolute;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  animation: floatDown 8s linear infinite;
+}
+
+.main-content {
+  margin-top: 60px;
+}
+
+.headline {
+  font-size: 6rem;
+}
+
+.image-container {
+  position: relative;
+  height: 100vh;
+  max-height: 750px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes floatDown {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(100vh);
   }
 }
