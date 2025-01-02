@@ -131,81 +131,81 @@ const Home = () => {
     const [dots, setDots] = useState([]);
 
     useEffect(() => {
-      const createDot = () => ({
-        id: Math.random(),
-        left: Math.random() * 100,
-        delay: Math.random() * 5,
-        size: 2 + Math.random() * 3
-      });
-  
-      const generateDots = () => {
-        const newDots = Array.from({ length: 40 }, createDot);
-        setDots(newDots);
-      };
-  
-      generateDots();
-      const interval = setInterval(generateDots, 8000);
-      return () => clearInterval(interval);
+        const createDot = () => ({
+            id: Math.random(),
+            left: Math.random() * 100,
+            delay: Math.random() * 5,
+            size: 5 + Math.random() * 3
+        });
+
+        const generateDots = () => {
+            const newDots = Array.from({ length: 40 }, createDot);
+            setDots(newDots);
+        };
+
+        generateDots();
+        const interval = setInterval(generateDots, 8000);
+        return () => clearInterval(interval);
     }, []);
     return (
         <div>
 
-<section className="landing-section">
-      <div className="dots-container">
-        {dots.map((dot) => (
-          <div
-            key={dot.id}
-            className="animated-dot"
-            style={{
-              left: `${dot.left}%`,
-              width: `${dot.size}px`,
-              height: `${dot.size}px`,
-              animationDelay: `${dot.delay}s`
-            }}
-          />
-        ))}
-      </div>
+            <section className="landing-section">
+                <div className="dots-container">
+                    {dots.map((dot) => (
+                        <div
+                            key={dot.id}
+                            className="animated-dot"
+                            style={{
+                                left: `${dot.left}%`,
+                                width: `${dot.size}px`,
+                                height: `${dot.size}px`,
+                                animationDelay: `${dot.delay}s`
+                            }}
+                        />
+                    ))}
+                </div>
 
-      <div className="container-fluid p-0 main-content">
-        <div className="row g-0">
-          <div className="col-md-6 d-flex align-items-center bg-white p-5">
-            <div className="py-5">
-              <h1 className="headline text-dark mb-4">
-                FAST, FRESH,<br />
-                AND FUTURE—<br />
-                PROOF
-              </h1>
-              <button className="btn btn-danger rounded-pill px-4 py-2">
-                Take Forward Now
-              </button>
-            </div>
-          </div>
+                <div className="container-fluid p-0 main-content">
+                    <div className="row g-0">
+                        <div className="col-md-6 d-flex align-items-center bg-white p-5">
+                            <div className="py-5">
+                                <h1 className="headline text-dark mb-4">
+                                    FAST, FRESH,<br />
+                                    AND FUTURE—<br />
+                                    PROOF
+                                </h1>
+                                <button className="btn btn-danger rounded-pill px-4 py-2">
+                                    Take Forward Now
+                                </button>
+                            </div>
+                        </div>
 
-          <div className="col-md-6">
-            <div className="image-container">
-              <img
-                src={MainImage}
-                alt="Team meeting"
-                className="main-image"
-              />
-            </div>
-          </div>
+                        <div className="col-md-6">
+                            <div className="image-container">
+                                <img
+                                    src={MainImage}
+                                    alt="Team meeting"
+                                    className="main-image"
+                                />
+                            </div>
+                        </div>
 
-          <div className="col-12 bg-white">
-            <div className="container py-4">
-              <div className="row justify-content-between px-md-5">
-                {stats.map((stat, index) => (
-                  <div key={index} className="col-6 col-md-3 text-center mb-3 mb-md-0">
-                    <p className="fw-bold stats-number mb-0">{stat.number}</p>
-                    <p className="text-muted mb-0">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                        <div className="col-12 bg-white">
+                            <div className="container py-4">
+                                <div className="row justify-content-between px-md-5">
+                                    {stats.map((stat, index) => (
+                                        <div key={index} className="col-6 col-md-3 text-center mb-3 mb-md-0">
+                                            <p className="fw-bold stats-number mb-0">{stat.number}</p>
+                                            <p className="text-muted mb-0">{stat.label}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className='services-section-full'>
                 <div className="container service-section">
                     <div className="row">
