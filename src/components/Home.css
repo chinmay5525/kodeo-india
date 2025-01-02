@@ -1031,14 +1031,14 @@
 
 @media (max-width: 576px) {
   .nav-tabs .nav-link {
-    font-size: 17px;
+    font-size: 15px;
     padding: 5px 10px;
     font-weight: 600;
   }
   .nav-tabs{
     gap: 0;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.50rem;
   }
   .sustain-cot {
     padding: 2rem 0;
