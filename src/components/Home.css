@@ -1118,19 +1118,24 @@
 }
 
 .dots-container {
- position: absolute;  /* Changed from fixed to absolute */
+  position: absolute;
+  /* Changed from fixed to absolute */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   pointer-events: none;
   z-index: 1;
-  overflow: hidden;  /* Added to contain dots */
-  height: 100%;     /* Added to ensure container takes full height */
+  overflow: hidden;
+  /* Added to contain dots */
+  height: 100%;
+  /* Added to ensure container takes full height */
 }
-.headline-2{
+
+.headline-2 {
   font-size: 3rem;
 }
+
 .animated-dot {
   position: absolute;
   background-color: #e5e7eb;
@@ -1167,3 +1172,4 @@
     transform: translateY(100vh);
   }
 }
+
