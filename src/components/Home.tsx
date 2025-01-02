@@ -18,6 +18,7 @@ interface TabsContent {
     [key: string]: TabContent;
 }
 
+
 import { useEffect, useState } from 'react'
 const Home = () => {
     const serviceRows = [
@@ -128,7 +129,14 @@ const Home = () => {
     };
 
     const [activeTab, setActiveTab] = useState<keyof typeof tabsContent>('sustainability');
-    const [dots, setDots] = useState([]);
+
+    const [dots, setDots] = useState<Dot[]>([]);
+    interface Dot {
+        id: number;
+        left: number;
+        delay: number;
+        size: number;
+    }
 
     useEffect(() => {
         const createDot = () => ({
@@ -149,7 +157,6 @@ const Home = () => {
     }, []);
     return (
         <div>
-
             <section className="landing-section">
                 <div className="dots-container">
                     {dots.map((dot) => (
