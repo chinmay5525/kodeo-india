@@ -943,7 +943,7 @@
 
 .nav-tabs .nav-link.active-tab {
   color: #fff;
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
   background-color: transparent;
 }
 
