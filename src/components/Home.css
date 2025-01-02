@@ -910,7 +910,6 @@
 .nav-tabs {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #ddd;
   flex-wrap: nowrap;  /* Prevent wrapping */
   gap: 10px;
   overflow-x: auto;  /* Enable horizontal scrolling */
@@ -953,6 +952,7 @@
 
 .tab-content h2 {
   margin-bottom: 15px;
+
   color: #fff;
 }
 
@@ -1035,6 +1035,7 @@
     padding: 5px 10px;
     font-weight: 600;
   }
+ 
   .nav-tabs{
     gap: 0;
     justify-content: space-between;
