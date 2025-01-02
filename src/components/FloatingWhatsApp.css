@@ -1,0 +1,19 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    /* Icon size */
+    height: 50px;
+    border-radius: 100px;
+
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}

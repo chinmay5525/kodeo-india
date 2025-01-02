@@ -1,0 +1,37 @@
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1200px) {
+   .navbar{
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+       }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+       }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar{
+        padding-top: 12px;
+        padding-bottom: 12px;
+       }
+
+       .kodeo_icon{
+        height: 27px;
+       }
+  }
