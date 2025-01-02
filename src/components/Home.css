@@ -957,8 +957,9 @@
 
 .nav-tabs .nav-link {
   border: none;
+  font-family: 'Aino', sans-serif;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 10px 20px;
   border-radius: 0;
   width: 100%;
@@ -968,6 +969,8 @@
 
 .nav-tabs .nav-link.active-tab {
   color: #fff;
+
+  font-family: 'Aino', sans-serif;
   border-top: 1px solid #fff;
   background-color: transparent;
 }
