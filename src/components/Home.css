@@ -486,6 +486,7 @@
 }
 .stats-number{
   font-size: 2rem;
+  font-weight: 300!important;
 }
 .blogs-heading {
   font-size: 3rem;
@@ -576,6 +577,7 @@
 @media (max-width: 768px) {
   .stats-number{
     font-size: 1.3rem;
+    font-weight: 300!important;
   }
 
   .sectors-section {
