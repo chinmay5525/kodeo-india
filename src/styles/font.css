@@ -1,156 +1,157 @@
-/* Aeonik Font Family */
 @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-BoldItalic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-LightItalic.otf') format('opentype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Aeonik';
-    src: url('../assets/fonts/AeonikTRIAL-RegularItalic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-  }
-  
-  /* PPFormula Font Family */
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-CondensedBlack.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-CondensedExtralight.otf') format('opentype');
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-CondensedLightItalic.otf') format('opentype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-ExtendedBold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-ExtendedMedium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-Extrabold.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-MediumItalic.otf') format('opentype');
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-NarrowRegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-NarrowSemibold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-SemiCondensedExtralight.otf') format('opentype');
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-SemiCondensedExtralightItalic.otf') format('opentype');
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-SemiCondensedMedium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-SemiCondensedThin.otf') format('opentype');
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'PPFormula';
-    src: url('../assets/fonts/PPFormula-SemiExtendedBold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
+  font-family: 'Aino';
+  src: url('../assets/fonts/Aino-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Aino-Bold.woff') format('woff'),
+    url('../assets/fonts/Aino-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aino';
+  src: url('../assets/fonts/Aino-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/Aino-BoldItalic.woff') format('woff'),
+    url('../assets/fonts/Aino-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aino';
+  src: url('../assets/fonts/Aino-Headline.woff2') format('woff2'),
+    url('../assets/fonts/Aino-Headline.woff') format('woff'),
+    url('../assets/fonts/Aino-Headline.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aino';
+  src: url('../assets/fonts/Aino-Italic.woff2') format('woff2'),
+    url('../assets/fonts/Aino-Italic.woff') format('woff'),
+    url('../assets/fonts/Aino-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aino';
+  src: url('../assets/fonts/Aino-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Aino-Regular.woff') format('woff'),
+    url('../assets/fonts/Aino-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* PPFormula Font Family */
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-CondensedBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-CondensedExtralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-CondensedLightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-ExtendedBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-ExtendedMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-NarrowRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-NarrowSemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-SemiCondensedExtralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-SemiCondensedExtralightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-SemiCondensedMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-SemiCondensedThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPFormula';
+  src: url('../assets/fonts/PPFormula-SemiExtendedBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

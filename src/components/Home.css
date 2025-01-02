@@ -38,7 +38,9 @@
 
 .industries-subhead {
   margin-bottom: 1rem;
-  font-weight: 800;
+  font-family: 'Aino', sans-serif;
+  font-weight: 600;
+
 }
 
 /* Tablet Responsive */
@@ -182,7 +184,7 @@
   font-size: 17px;
   text-decoration: underline;
   margin-top: 2rem;
-  font-weight: 800;
+  font-weight: 500;
   text-underline-offset: 6px;
   /* Adjust the value to control the space */
 }
@@ -191,7 +193,7 @@
   font-size: 17px;
   text-decoration: underline;
   margin-top: 0.75rem;
-  font-weight: 800;
+  font-weight: 500;
   text-underline-offset: 6px;
   /* Adjust the value to control the space */
 }
@@ -277,6 +279,7 @@
 
 .countries-grid div {
   padding: 0.8rem;
+  font-family: 'Aino', sans-serif;
   background: #D9D9D9;
   border: none;
   border-radius: 50px;
@@ -339,9 +342,8 @@
   border-radius: 50px;
   padding: 12px 24px;
   font-size: 19px;
-
-  font-weight: 800;
-
+  font-family: 'Aino', sans-serif;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
@@ -395,11 +397,12 @@
 .btn-danger {
   background-color: #F6320B;
   border: none;
-  font-weight: 600 !important;
+
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   padding-right: 20px !important;
   padding-left: 20px !important;
+  font-family: 'Aino', sans-serif;
 }
 
 .case-study-section {
@@ -409,8 +412,8 @@
 }
 
 .case-studies-heading {
-  font-weight: 800;
   font-size: 20px;
+  font-weight: 600 !important;
 }
 
 .case-heading {
@@ -425,6 +428,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   padding-right: 20px;
+  font-family: 'Aino', sans-serif;
   padding-left: 20px;
   background: transparent;
   border-radius: 50px;
@@ -443,7 +447,10 @@
   box-shadow: none !important;
   border-bottom-color: rgba(255, 255, 255, 0.8) !important;
 }
-
+.form-control{
+  font-family: 'Aino', sans-serif;
+  font-weight: 300;
+}
 .custom-checkbox .form-check-input {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.4);
@@ -452,6 +459,8 @@
 .custom-checkbox .form-check-label {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
+
+  font-family: 'Aino', sans-serif;
   font-weight: 300;
 }
 
@@ -785,7 +794,8 @@
 
 .subscribe-btn {
   margin-top: clamp(1rem, 3vw, 1.6rem);
-  font-weight: 600;
+ 
+  font-family: 'Aino', sans-serif;
   padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
   background-color: var(--primary-color);
   color: white;
