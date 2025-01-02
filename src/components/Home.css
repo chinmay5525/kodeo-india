@@ -1128,7 +1128,9 @@
   overflow: hidden;  /* Added to contain dots */
   height: 100%;     /* Added to ensure container takes full height */
 }
-
+.headline-2{
+  font-size: 3rem;
+}
 .animated-dot {
   position: absolute;
   background-color: #e5e7eb;

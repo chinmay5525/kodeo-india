@@ -565,7 +565,7 @@ const Home = () => {
                 <div className='container companies-container'>
                     <div className='content-wrapper'>
                         <div className='text-content'>
-                            <h1 className='headline'>
+                            <h1 className='headline-2'>
                                 Tailored to deliver the best for your <br></br>business
                             </h1>
                             <p className='description'>A flexible and adaptive process that helps<br /> businesses launch and scale quickly.</p>
