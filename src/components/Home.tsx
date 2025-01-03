@@ -801,7 +801,7 @@ const Home = () => {
                                     </h5>
                                    
                                 </div>
-                                <div className="announcement-meta">
+                                 <div className="announcement-meta">
                                         <span>{announcement.type}</span>
                                         <span>|</span>
                                         <span>{announcement.date}</span>
