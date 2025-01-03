@@ -4,8 +4,10 @@
 }
 
 .footer-section {
+    background-color: #f7f4f2;
     padding-top: 2rem;
     padding-left: 5rem;
+    padding-bottom: 0.05rem;
     padding-right: 5rem;
 }
 

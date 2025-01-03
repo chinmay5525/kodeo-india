@@ -5,7 +5,6 @@ const Footer = () => {
         <div>
 
             <section className='footer-section'>
-                <hr style={{ border: '1px solid #ddd', }}></hr>
                 <div className='footer'>
 
                     <div>
