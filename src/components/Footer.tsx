@@ -3,7 +3,9 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div>
+
             <section className='footer-section'>
+                <hr style={{ border: '1px solid #ddd', }}></hr>
                 <div className='footer'>
 
                     <div>
@@ -48,7 +50,7 @@ const Footer = () => {
 
 
                     </div>
-                  
+
                 </div>
                 <hr></hr>
                 <p className='footer-privacy'>Kodeo Limited Copyright © 2024 • Company Number 14647333 • VAT Registered GB 434150821</p>

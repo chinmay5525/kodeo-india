@@ -40,7 +40,71 @@ const Home = () => {
         phone: '',
         project: ''
     });
-
+    const announcements = [
+        {
+            logos: [
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Mothercare"
+                },
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "RBL"
+                }
+            ],
+            title: "Mothercare plc and Reliance Brands Holding UK Limited announce strategic Joint Venture for South Asia",
+            type: "RIL COMMUNICATION",
+            date: "17 OCT, 2024"
+        },
+        {
+            logos: [
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Reliance Industries"
+                }
+            ],
+            title: "RIL Q2 FY2025 Financial and Operational Performance",
+            type: "RIL COMMUNICATION",
+            date: "14 OCT, 2024"
+        },
+        {
+            logos: [
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Delta Galil"
+                },
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Reliance Retail"
+                }
+            ],
+            title: "Reliance Retail Ventures and Delta Galil Announce Strategic Partnership in India",
+            type: "RIL COMMUNICATION",
+            date: "10 SEP, 2024"
+        },
+        {
+            logos: [
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Sample Logo 4"
+                }
+            ],
+            title: "Fourth Announcement Title Goes Here",
+            type: "RIL COMMUNICATION",
+            date: "05 SEP, 2024"
+        },
+        {
+            logos: [
+                {
+                    src: "/api/placeholder/120/40",
+                    alt: "Sample Logo 5"
+                }
+            ],
+            title: "Fifth Announcement Title Goes Here",
+            type: "RIL COMMUNICATION",
+            date: "01 SEP, 2024"
+        }
+    ];
     const [characterCount, setCharacterCount] = useState(0);
 
     const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -714,6 +778,43 @@ const Home = () => {
                         </div>
                     </div>
 
+                </div>
+            </section>
+            <section>
+                <div className="container-fluid announcement-tab">
+                    <h1 className='announcement-title-3'>Announcements</h1>
+                    <div className="row g-4">
+                        {announcements.map((announcement, index) => (
+                            <div key={index} className="five-col-grid">
+                                <div className="announcement-item">
+                                    <div className="logo-container">
+                                        {announcement.logos.map((logo, logoIndex) => (
+                                            <img
+                                                key={logoIndex}
+                                                src={logo.src}
+                                                alt={logo.alt}
+                                            />
+                                        ))}
+                                    </div>
+                                    <h5 className="announcement-title">
+                                        {announcement.title}
+                                    </h5>
+                                   
+                                </div>
+                                <div className="announcement-meta">
+                                        <span>{announcement.type}</span>
+                                        <span>|</span>
+                                        <span>{announcement.date}</span>
+                                    </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="text-center mt-5">
+                        <button className="btn learn-more-2">
+                            More Announcements →
+                        </button>
+                    </div>
                 </div>
             </section>
         </div>
