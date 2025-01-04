@@ -224,6 +224,25 @@ const Home = () => {
         const interval = setInterval(generateDots, 8000);
         return () => clearInterval(interval);
     }, []);
+
+
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            // Adjust breakpoints as needed
+            setIsMobile(window.innerWidth <= 1024); // Breakpoint for tablet and smaller
+        };
+
+        // Check the screen size on initial load and on resize
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup listener on unmount
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div>
             <section className="landing-section">
@@ -530,9 +549,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
             <section className="location-section">
-                <div className="container">
+                <div>
                     <h1 className="locations">
                         Culture-Driven UI/UX <br />
                         & Development Excellence
@@ -542,61 +560,76 @@ const Home = () => {
                         across 4 countries touching billions of lives <br />
                         through design.
                     </p>
-
-                    {/* Vertical Slider */}
-                    <div
-                        id="verticalCarousel"
-                        className="carousel slide carousel-vertical"
-                        data-bs-ride="carousel"
-                    >
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img
-                                    src={WorkOne}
-                                    alt="Work 1"
-                                    className="d-block w-100 work-image"
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src={WorkTwo}
-                                    alt="Work 2"
-                                    className="d-block w-100 work-image"
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src={WorkThree}
-                                    alt="Work 3"
-                                    className="d-block w-100 work-image"
-                                />
-                            </div>
+                    <div className="countries-container">
+                        <div className="countries-grid">
+                            <div>India <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Great Britain <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>UAE <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Singapore <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Russia <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>South Africa <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
                         </div>
+                    </div>
+                    <div className="pt-5 pb-3">
+                        {isMobile ? (
+                            // Carousel for Mobile
+                            <div id="workCarousel" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={WorkOne} alt="Work One" className="d-block w-100 work-image" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={WorkTwo} alt="Work Two" className="d-block w-100 work-image" />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={WorkThree} alt="Work Three" className="d-block w-100 work-image" />
+                                    </div>
+                                </div>
 
-                        {/* Controls */}
-                        <button
-                            className="carousel-control-prev"
-                            type="button"
-                            data-bs-target="#verticalCarousel"
-                            data-bs-slide="prev"
-                        >
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                            className="carousel-control-next"
-                            type="button"
-                            data-bs-target="#verticalCarousel"
-                            data-bs-slide="next"
-                        >
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
+                                {/* Auto-slide and swipe */}
+                                <script>
+                                    {`
+                  const carousel = document.querySelector("#workCarousel");
+                  if (carousel) {
+                    const bsCarousel = new bootstrap.Carousel(carousel, {
+                      interval: 3000, // Auto-slide every 3 seconds
+                      ride: true,
+                      touch: true,
+                    });
+                  }
+                `}
+                                </script>
+
+                                {/* Hiding carousel arrows */}
+                                <style>
+                                    {`
+                  #workCarousel .carousel-control-prev,
+                  #workCarousel .carousel-control-next {
+                    display: none;
+                  }
+                `}
+                                </style>
+                            </div>
+                        ) : (
+                            // Grid for Desktop/Web
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <div className="col-sm">
+                                        <img src={WorkOne} alt="Work One" loading="lazy" className="work-image" />
+                                    </div>
+                                    <div className="col-sm">
+                                        <img src={WorkTwo} alt="Work Two" loading="lazy" className="work-image" />
+                                    </div>
+                                    <div className="col-sm">
+                                        <img src={WorkThree} alt="Work Three" loading="lazy" className="work-image" />
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>
-
-
             <section>
                 <div className="container my-5">
                     <div className="row">

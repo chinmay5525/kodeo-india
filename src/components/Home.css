@@ -146,6 +146,7 @@
 
   .grid-col {
     margin-bottom: 1rem;
+    padding: 0;
   }
 
   .industries-subhead {
@@ -560,7 +561,7 @@
   .btn {
     padding: 8px 16px !important;
     font-size: 14px;
-
+   
     margin-bottom: 0rem;
   }
 }
@@ -586,13 +587,11 @@
     font-size: 1.3rem;
     font-weight: 300 !important;
   }
-
-  .case-study-cols {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-  }
-
+.case-study-cols{
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
   .sectors-section {
     padding: 0.5rem;
   }
@@ -1298,33 +1297,5 @@
 
   .announcement-meta {
     font-size: 0.8rem;
-  }
-}
-
-/* Custom Vertical Carousel */
-.carousel-vertical .carousel-inner {
-  display: flex;
-  flex-direction: column; /* Stack slides vertically */
-  height: 300px; /* Set height for the vertical slider */
-}
-
-.carousel-vertical .carousel-item {
-  flex: 0 0 100%; /* Full height for each item */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.work-image {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .carousel-vertical .carousel-inner {
-      height: 400px; /* Increase height for mobile */
   }
 }
