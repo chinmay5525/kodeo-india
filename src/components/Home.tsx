@@ -326,7 +326,7 @@ const Home = () => {
                     <div className="row g-4 align-items-center">
                         {/* Left: Two Boxes Side by Side */}
                         <div className="col-md-8">
-                            <div className="d-flex gap-4">
+                            <div className="d-flex case-study-cols gap-4">
                                 <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
                                 <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
                             </div>
@@ -371,7 +371,7 @@ const Home = () => {
                         </div>
                         {/* Right: Two Boxes Side by Side */}
                         <div className="col-md-8">
-                            <div className="d-flex gap-4">
+                            <div className="d-flex  case-study-cols gap-4">
                                 <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
                                 <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
                             </div>

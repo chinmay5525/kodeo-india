@@ -519,6 +519,8 @@
   max-width: 1800px;
 }
 
+
+
 /* Base responsive styles */
 :root {
   --mobile-heading-size: 1.7rem;
@@ -584,7 +586,11 @@
     font-size: 1.3rem;
     font-weight: 300 !important;
   }
-
+.case-study-cols{
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
   .sectors-section {
     padding: 0.5rem;
   }
