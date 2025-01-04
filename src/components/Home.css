@@ -1301,28 +1301,30 @@
   }
 }
 
-/* General Styles */
-.image-slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider-container {
+/* Custom Vertical Carousel */
+.carousel-vertical .carousel-inner {
   display: flex;
-  flex-direction: column;
-  height: 100%; /* Adjust to the desired height */
-  overflow-y: auto; /* Enable vertical scrolling */
-  scroll-snap-type: y mandatory; /* Enables snap scrolling */
-  gap: 10px;
+  flex-direction: column; /* Stack slides vertically */
+  height: 300px; /* Set height for the vertical slider */
 }
 
+.carousel-vertical .carousel-item {
+  flex: 0 0 100%; /* Full height for each item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* Mobile Styles */
+.work-image {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 768px) {
-  .image-slider {
-      height: 300px; /* Set fixed height for mobile slider */
-  }
-  .slider-container {
-      height: auto; /* Adapt to content height */
+  .carousel-vertical .carousel-inner {
+      height: 400px; /* Increase height for mobile */
   }
 }

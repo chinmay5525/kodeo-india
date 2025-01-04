@@ -532,38 +532,71 @@ const Home = () => {
             </section>
 
             <section className="location-section">
-                <div>
-                    <div>
-                        <h1 className="locations">
-                            Culture-Driven UI/UX <br />
-                            & Development Excellence
-                        </h1>
-                        <p className="location-subheading">
-                            We're a group of 180+ creative minds spread <br />
-                            across 4 countries touching billions of lives <br />
-                            through design.
-                        </p>
-                        <div className="countries-container">
-                            <div className="countries-grid">
-                                <div>India</div>
-                                <div>United Kingdom</div>
-                                <div>UAE</div>
-                                <div>Singapore</div>
-                                <div>Russia</div>
-                                <div>South Africa</div>
-                                <div>Kazakhstan</div>
+                <div className="container">
+                    <h1 className="locations">
+                        Culture-Driven UI/UX <br />
+                        & Development Excellence
+                    </h1>
+                    <p className="location-subheading">
+                        We're a group of 180+ creative minds spread <br />
+                        across 4 countries touching billions of lives <br />
+                        through design.
+                    </p>
+
+                    {/* Vertical Slider */}
+                    <div
+                        id="verticalCarousel"
+                        className="carousel slide carousel-vertical"
+                        data-bs-ride="carousel"
+                    >
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img
+                                    src={WorkOne}
+                                    alt="Work 1"
+                                    className="d-block w-100 work-image"
+                                />
+                            </div>
+                            <div className="carousel-item">
+                                <img
+                                    src={WorkTwo}
+                                    alt="Work 2"
+                                    className="d-block w-100 work-image"
+                                />
+                            </div>
+                            <div className="carousel-item">
+                                <img
+                                    src={WorkThree}
+                                    alt="Work 3"
+                                    className="d-block w-100 work-image"
+                                />
                             </div>
                         </div>
-                        <div className="image-slider">
-                            <div className="slider-container">
-                                <img src={WorkOne} alt="Work 1" loading="lazy" className="work-image" />
-                                <img src={WorkTwo} alt="Work 2" loading="lazy" className="work-image" />
-                                <img src={WorkThree} alt="Work 3" loading="lazy" className="work-image" />
-                            </div>
-                        </div>
+
+                        {/* Controls */}
+                        <button
+                            className="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#verticalCarousel"
+                            data-bs-slide="prev"
+                        >
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            className="carousel-control-next"
+                            type="button"
+                            data-bs-target="#verticalCarousel"
+                            data-bs-slide="next"
+                        >
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </section>
+
+
             <section>
                 <div className="container my-5">
                     <div className="row">
