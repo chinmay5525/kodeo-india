@@ -1055,6 +1055,16 @@
     margin: 0 5px;
   }
 
+  .main-image {
+    width: 100%;
+    height: 50% !important;
+    object-fit: cover;
+  }
+
+  .image-container {
+    height: auto !important;
+  }
+
   .nav-tabs .nav-link {
     font-size: 1rem;
     padding: 6px 12px;
@@ -1111,6 +1121,9 @@
     padding: 8px 20px;
     font-size: 0.9rem;
   }
+
+
+
 }
 
 .landing-section {
@@ -1222,7 +1235,7 @@
   width: 20%;
 }
 
-.announcement-title-3{
+.announcement-title-3 {
   font-size: 3rem;
   padding-bottom: 2rem;
 }
@@ -1230,25 +1243,28 @@
 /* Responsive breakpoints */
 @media (max-width: 1199px) {
   .five-col-grid {
-    width: 25%; /* 4 columns */
+    width: 25%;
+    /* 4 columns */
   }
 }
 
 @media (max-width: 991px) {
   .five-col-grid {
-    width: 33.333%; /* 3 columns */
+    width: 33.333%;
+    /* 3 columns */
   }
 }
 
 @media (max-width: 767px) {
   .five-col-grid {
-    width: 50%; /* 2 columns */
+    width: 50%;
+    /* 2 columns */
   }
-  
+
   .logo-container {
     height: 50px;
   }
-  
+
   .announcement-title {
     font-size: 1rem;
   }
@@ -1256,21 +1272,22 @@
 
 @media (max-width: 575px) {
   .five-col-grid {
-    width: 100%; /* 1 column */
+    width: 100%;
+    /* 1 column */
   }
-  
+
   .announcement-tab {
     padding: 1.5rem 2rem;
   }
-  
+
   .logo-container {
     height: 45px;
   }
-  
+
   .announcement-title {
     font-size: 0.95rem;
   }
-  
+
   .announcement-meta {
     font-size: 0.8rem;
   }
