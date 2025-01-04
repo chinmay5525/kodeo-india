@@ -1,4 +1,6 @@
 import './Home.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import ImageOne from '../assets/image.png'
 import SectorOne from '../assets/sectors/SectorOne.jpg'
 import SectorTwo from '../assets/sectors/SectorTwo.jpg'
@@ -226,16 +228,14 @@ const Home = () => {
     }, []);
 
 
-
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
-            // Adjust breakpoints as needed
-            setIsMobile(window.innerWidth <= 1024); // Breakpoint for tablet and smaller
+            setIsMobile(window.innerWidth <= 1024); // Adjusted breakpoint for tablets and smaller devices
         };
 
-        // Check the screen size on initial load and on resize
+        // Check screen size on load and resize
         handleResize();
         window.addEventListener("resize", handleResize);
 
@@ -243,6 +243,14 @@ const Home = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        if (isMobile) {
+            // Enable automatic carousel sliding
+            const carousel = document.querySelector("#workCarousel");
+            if (carousel) {
+            }
+        }
+    }, [isMobile]);
     return (
         <div>
             <section className="landing-section">
@@ -562,46 +570,89 @@ const Home = () => {
                     </p>
                     <div className="countries-container">
                         <div className="countries-grid">
-                            <div>India <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>Great Britain <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>UAE <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>Singapore <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>Russia <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>South Africa <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                            <div>Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>
+                                India{" "}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="26px"
+                                    viewBox="0 -960 960 960"
+                                    width="26px"
+                                    fill="#5f6368"
+                                >
+                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                United Kingdom{" "}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="26px"
+                                    viewBox="0 -960 960 960"
+                                    width="26px"
+                                    fill="#5f6368"
+                                >
+                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                UAE{" "}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="26px"
+                                    viewBox="0 -960 960 960"
+                                    width="26px"
+                                    fill="#5f6368"
+                                >
+                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                Singapore{" "}
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="26px"
+                                    viewBox="0 -960 960 960"
+                                    width="26px"
+                                    fill="#5f6368"
+                                >
+                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                     <div className="pt-5 pb-3">
                         {isMobile ? (
                             // Carousel for Mobile
-                            <div id="workCarousel" className="carousel slide" data-bs-ride="carousel">
+                            <div
+                                id="workCarousel"
+                                className="carousel slide"
+                                data-bs-ride="carousel"
+                            >
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img src={WorkOne} alt="Work One" className="d-block w-100 work-image" />
+                                        <img
+                                            src={WorkOne}
+                                            alt="Work One"
+                                            className="d-block w-100 work-image"
+                                        />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={WorkTwo} alt="Work Two" className="d-block w-100 work-image" />
+                                        <img
+                                            src={WorkTwo}
+                                            alt="Work Two"
+                                            className="d-block w-100 work-image"
+                                        />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src={WorkThree} alt="Work Three" className="d-block w-100 work-image" />
+                                        <img
+                                            src={WorkThree}
+                                            alt="Work Three"
+                                            className="d-block w-100 work-image"
+                                        />
                                     </div>
                                 </div>
 
-                                {/* Auto-slide and swipe */}
-                                <script>
-                                    {`
-                  const carousel = document.querySelector("#workCarousel");
-                  if (carousel) {
-                    const bsCarousel = new bootstrap.Carousel(carousel, {
-                      interval: 3000, // Auto-slide every 3 seconds
-                      ride: true,
-                      touch: true,
-                    });
-                  }
-                `}
-                                </script>
-
-                                {/* Hiding carousel arrows */}
+                                {/* Hide arrows */}
                                 <style>
                                     {`
                   #workCarousel .carousel-control-prev,
@@ -616,13 +667,28 @@ const Home = () => {
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-sm">
-                                        <img src={WorkOne} alt="Work One" loading="lazy" className="work-image" />
+                                        <img
+                                            src={WorkOne}
+                                            alt="Work One"
+                                            loading="lazy"
+                                            className="work-image"
+                                        />
                                     </div>
                                     <div className="col-sm">
-                                        <img src={WorkTwo} alt="Work Two" loading="lazy" className="work-image" />
+                                        <img
+                                            src={WorkTwo}
+                                            alt="Work Two"
+                                            loading="lazy"
+                                            className="work-image"
+                                        />
                                     </div>
                                     <div className="col-sm">
-                                        <img src={WorkThree} alt="Work Three" loading="lazy" className="work-image" />
+                                        <img
+                                            src={WorkThree}
+                                            alt="Work Three"
+                                            loading="lazy"
+                                            className="work-image"
+                                        />
                                     </div>
                                 </div>
                             </div>
