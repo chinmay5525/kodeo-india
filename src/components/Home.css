@@ -1300,3 +1300,29 @@
     font-size: 0.8rem;
   }
 }
+
+/* General Styles */
+.image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Adjust to the desired height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enables snap scrolling */
+  gap: 10px;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .image-slider {
+      height: 300px; /* Set fixed height for mobile slider */
+  }
+  .slider-container {
+      height: auto; /* Adapt to content height */
+  }
+}

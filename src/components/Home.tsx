@@ -531,47 +531,39 @@ const Home = () => {
                 </div>
             </section>
 
-
-            <section className='location-section'>
+            <section className="location-section">
                 <div>
                     <div>
                         <h1 className="locations">
                             Culture-Driven UI/UX <br />
                             & Development Excellence
                         </h1>
-                        <p className='location-subheading'>We're a group of 180+ creative minds spread <br /> across 4 countries touching billions of lives <br />through design.</p>
+                        <p className="location-subheading">
+                            We're a group of 180+ creative minds spread <br />
+                            across 4 countries touching billions of lives <br />
+                            through design.
+                        </p>
                         <div className="countries-container">
                             <div className="countries-grid">
-                                <div>India <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>United Kingdom <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>UAE <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>Singapore <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>Russia <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>South Africa <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
-                                <div>Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                                <div>India</div>
+                                <div>United Kingdom</div>
+                                <div>UAE</div>
+                                <div>Singapore</div>
+                                <div>Russia</div>
+                                <div>South Africa</div>
+                                <div>Kazakhstan</div>
                             </div>
                         </div>
-                        <div className='pt-5 pb-3'>
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="col-sm">
-                                        <img src={WorkOne} alt="fireSpot" loading="lazy" className="work-image" />
-                                    </div>
-                                    <div className="col-sm">
-                                        <img src={WorkTwo} alt="fireSpot" loading="lazy" className="work-image" />
-                                    </div>
-                                    <div className="col-sm">
-                                        <img src={WorkThree} alt="fireSpot" loading="lazy" className="work-image" />
-                                    </div>
-                                </div>
+                        <div className="image-slider">
+                            <div className="slider-container">
+                                <img src={WorkOne} alt="Work 1" loading="lazy" className="work-image" />
+                                <img src={WorkTwo} alt="Work 2" loading="lazy" className="work-image" />
+                                <img src={WorkThree} alt="Work 3" loading="lazy" className="work-image" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
             <section>
                 <div className="container my-5">
                     <div className="row">
