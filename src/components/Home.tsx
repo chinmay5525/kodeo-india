@@ -189,6 +189,11 @@ const Home = () => {
             title: "Media & Entertainment",
             description: "Your Media description here",
             image: "/path/to/impact-image.jpg"
+        },
+        sports: {
+            title: "Sports",
+            description: "Your Media description here",
+            image: "/path/to/impact-image.jpg"
         }
     };
 
@@ -799,13 +804,13 @@ const Home = () => {
                                     <h5 className="announcement-title">
                                         {announcement.title}
                                     </h5>
-                                   
+
                                 </div>
-                                 <div className="announcement-meta">
-                                        <span>{announcement.type}</span>
-                                        <span>|</span>
-                                        <span>{announcement.date}</span>
-                                    </div>
+                                <div className="announcement-meta">
+                                    <span>{announcement.type}</span>
+                                    <span>|</span>
+                                    <span>{announcement.date}</span>
+                                </div>
                             </div>
                         ))}
                     </div>
