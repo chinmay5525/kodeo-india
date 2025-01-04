@@ -25,13 +25,13 @@ const Navbar = () => {
                                     height: '3px',
                                     width: '30px',
                                     backgroundColor: '#ff3e00',
-                                    borderRadius: '2px'
+                                    borderRadius: '0'
                                 }}></div>
                                 <div style={{
                                     height: '3px',
                                     width: '30px',
                                     backgroundColor: '#ff3e00',
-                                    borderRadius: '2px'
+                                    borderRadius: '0'
                                 }}></div>
                             </div>
                         </button>
