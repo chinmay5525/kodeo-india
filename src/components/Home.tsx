@@ -245,7 +245,7 @@ const Home = () => {
                 <div className="container-fluid p-0 main-content">
                     <div className="row g-0">
                         <div className="col-md-6 d-flex align-items-center bg-white p-5">
-                            <div className="py-5">
+                            <div className="">
                                 <h1 className="headline text-dark mb-4">
                                     FAST, FRESH,<br />
                                     AND FUTURE—<br />
