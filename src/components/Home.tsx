@@ -230,29 +230,29 @@ const Home = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 1024); // Adjusted breakpoint for tablets and smaller devices
-      };
-  
-      // Check screen size on load and resize
-      handleResize();
-      window.addEventListener("resize", handleResize);
-  
-      // Cleanup listener on unmount
-      return () => window.removeEventListener("resize", handleResize);
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1024); // Adjusted breakpoint for tablets and smaller devices
+        };
+
+        // Check screen size on load and resize
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup listener on unmount
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
-  
+
     useEffect(() => {
         if (isMobile) {
             const carouselElement = document.querySelector("#workCarousel");
             if (carouselElement) {
-              new window.bootstrap.Carousel(carouselElement, {
-                interval: 3000, // Auto-slide every 3 seconds
-                ride: "carousel",
-                touch: true, // Enable swipe gestures
-              });
+                new window.bootstrap.Carousel(carouselElement, {
+                    interval: 3000, // Auto-slide every 3 seconds
+                    ride: "carousel",
+                    touch: true, // Enable swipe gestures
+                });
             }
-          }
+        }
     }, [isMobile]);
 
     return (
@@ -576,30 +576,13 @@ const Home = () => {
                     </p>
                     <div className="countries-container">
                         <div className="countries-grid">
-                            <div>
-                                India{" "}
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    height="26px"
-                                    viewBox="0 -960 960 960"
-                                    width="26px"
-                                    fill="#5f6368"
-                                >
-                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
-                                </svg>
-                            </div>
-                            <div>
-                                United Kingdom{" "}
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    height="26px"
-                                    viewBox="0 -960 960 960"
-                                    width="26px"
-                                    fill="#5f6368"
-                                >
-                                    <path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" />
-                                </svg>
-                            </div>
+                            <div>India <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Great Britian <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>UAE <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Singapore <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Russia <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>South Africa <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
+                            <div>Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
                         </div>
                     </div>
                     <div className="pt-5 pb-3">
