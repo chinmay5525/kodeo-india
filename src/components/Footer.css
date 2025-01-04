@@ -71,6 +71,7 @@
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+        padding: var(--mobile-padding);
     }
 
     .bottom-footer-3 {

@@ -563,7 +563,7 @@
   .btn {
     padding: 8px 16px !important;
     font-size: 14px;
-   
+
     margin-bottom: 0rem;
   }
 }
@@ -589,20 +589,31 @@
     font-size: 1.3rem;
     font-weight: 300 !important;
   }
-.case-study-cols{
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-}
+
+  .case-study-cols {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+  }
+
   .sectors-section {
-    padding: 0.5rem;
+    padding: var(--mobile-padding);
   }
 
   .card-title-blog {
     font-size: 18px !important;
   }
 
-  .sectors {
+
+  .mobile-rs {
+    padding: 0;
+  }
+
+  .mobile-rs2 {
+    padding: 0;
+  }
+
+  .mobile-rs4 {
     padding: var(--mobile-padding);
   }
 
@@ -647,7 +658,7 @@
   .countries-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-right: 0;
-
+    text-align: left;
     font-size: 0.90rem;
   }
 
@@ -699,7 +710,10 @@
 @media (max-width: 768px) {
 
   .card-body {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .card-title {
@@ -1286,7 +1300,7 @@
   }
 
   .announcement-tab {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
   }
 
   .logo-container {

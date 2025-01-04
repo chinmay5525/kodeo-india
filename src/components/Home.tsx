@@ -105,7 +105,7 @@ const Home = () => {
             date: "01 SEP, 2024"
         }
     ];
-    const [characterCount, setCharacterCount] = useState(0);
+    const [, setCharacterCount] = useState(0);
 
     const handleChange = (e: { target: { name: any; value: any } }) => {
         const { name, value } = e.target;
@@ -350,7 +350,7 @@ const Home = () => {
                     <button className="btn btn-danger rounded-pill">See All</button>
                 </div>
 
-                <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 15px" }}>
+                <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 0" }}>
                     {/* Header Section */}
 
                     {/* First Row */}
@@ -670,7 +670,7 @@ const Home = () => {
                             <button className="btn btn-danger   rounded-pill mt-3">View Blogs</button>
                         </div>
 
-                        <div className="col-md-8">
+                        <div className="col-md-8 mobile-rs4">
                             {/* Featured articles */}
                             {blogs.map(blog => (
                                 <div key={blog.id} className="card mb-4 border-0">
@@ -751,21 +751,21 @@ const Home = () => {
                     <div>
                         <div className="container">
                             <div className="row sectors-row">
-                                <div className="col-sm">
+                                <div className="col-sm mobile-rs">
                                     <img src={SectorOne} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Governments</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
-                                <div className="col-sm">
+                                <div className="col-sm mobile-rs">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
-                                <div className="col-sm">
+                                <div className="col-sm mobile-rs">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
                                     <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
@@ -788,7 +788,7 @@ const Home = () => {
 
                             <form onSubmit={handleSubmit}>
                                 <div className="row mb-5 g-4">
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 mobile-rs2">
                                         <input
                                             type="text"
                                             className="form-control custom-input"
@@ -799,7 +799,7 @@ const Home = () => {
                                             required
                                         />
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 mobile-rs2">
                                         <input
                                             type="email"
                                             className="form-control custom-input"
@@ -810,7 +810,7 @@ const Home = () => {
                                             required
                                         />
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 mobile-rs2">
                                         <input
                                             type="tel"
                                             className="form-control custom-input"
@@ -821,9 +821,6 @@ const Home = () => {
                                             required
                                         />
                                     </div>
-                                </div>
-
-                                <div className="mb-5">
                                     <textarea
                                         className="form-control custom-input"
                                         placeholder="Tell us about your project"
@@ -834,10 +831,9 @@ const Home = () => {
                                         maxLength={225}
                                         required
                                     />
-                                    <small className="text-muted mt-2 d-block">
-                                        {characterCount}/225
-                                    </small>
+
                                 </div>
+
 
                                 <div className="mb-4">
                                     <div className="form-check custom-checkbox mb-3">
