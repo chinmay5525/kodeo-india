@@ -89,7 +89,9 @@
     }
 
     .bottom-footer-links {
-        margin-top: 15px;
+        margin-top: 0;
+        display: flex;
+        gap: 15px;
     }
 
     .bottom-footer-links a {
