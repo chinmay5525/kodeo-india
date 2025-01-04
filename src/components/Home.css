@@ -638,7 +638,7 @@
   .countries-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-right: 0;
-    gap: 1rem;
+
     font-size: 0.90rem;
   }
 
