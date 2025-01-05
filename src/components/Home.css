@@ -217,7 +217,6 @@
 }
 
 .sector-image {
-  border-radius: 10px;
   width: 100%;
   /* Make the image fill the container's width */
   height: 300px;
@@ -302,7 +301,6 @@
 
 .work-image {
   width: 100%;
-  border-radius: 10px;
   /* Make the image fill the container's width */
   height: 300px;
   /* Maintain the aspect ratio */
