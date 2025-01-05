@@ -293,7 +293,7 @@
 
 .countries-grid div {
   padding: 0.8rem;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Aino', sans-serif;
   border: none;
   font-weight: 300;
@@ -665,6 +665,11 @@
     padding-bottom: 1.1rem;
   }
 
+  .countries-grid div {
+
+    font-size: 14px;
+
+  }
   .work-image {
     height: 200px;
     margin-bottom: 1rem;
