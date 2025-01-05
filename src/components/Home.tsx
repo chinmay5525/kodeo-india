@@ -595,7 +595,7 @@ const Home = () => {
                             <div> <img className='me-2' src={Kazakstan} alt="Singapore" width="40" height="40" />Kazakhstan <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg></div>
                         </div>
                     </div>
-                    <div className="pt-5 pb-3">
+                    <div className="pt-3 pb-3">
                         {isMobile ? (
                             // Carousel for Mobile
                             <div
