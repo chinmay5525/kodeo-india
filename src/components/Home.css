@@ -645,8 +645,6 @@
   }
 }
 
-
-
 /* Location section responsive */
 @media (max-width: 768px) {
   .location-section {
@@ -666,10 +664,13 @@
   }
 
   .countries-grid div {
-
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
 
   }
+
   .work-image {
     height: 200px;
     margin-bottom: 1rem;
