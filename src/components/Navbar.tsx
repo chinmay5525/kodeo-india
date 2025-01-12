@@ -32,10 +32,12 @@ const Navbar = () => {
         document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
     };
 
+
+    
     return (
         <>
             {/* Regular Navbar */}
-            <nav className="navbar fixed-top">
+            <nav className={`navbar fixed-top ${isMenuOpen ? 'menu-open' : ''}`}>
                 <div className="container-fluid px-4">
                     <div className="logo-container">
                         <svg className='kodeo_icon' width="100" height="43" viewBox="0 0 100 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,15 +49,12 @@ const Navbar = () => {
 
 
                     <button
-                        className="border-0 bg-transparent"
+                        className={`border-0 bg-transparent hamburger-icon ${isMenuOpen ? 'menu-open' : ''}`}
                         onClick={toggleMenu}
-
                         aria-label="Toggle navigation"
                     >
-                        <div className="d-flex flex-column gap-2 ">
-                            <div className='hamburger-lines'></div>
-                            <div className='hamburger-lines'></div>
-                        </div>
+                        <div className="hamburger-lines"></div>
+                        <div className="hamburger-lines"></div>
                     </button>
                 </div>
             </nav>
