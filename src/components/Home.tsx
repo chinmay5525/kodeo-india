@@ -775,6 +775,15 @@ const Home = () => {
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
+                                
+                                <div className="col-sm mobile-rs">
+                                    <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
+                                    <h5 className='sectors-subhead'>Industries</h5>
+                                    <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
+                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
+
+                                </div>
+                                  
                                 <div className="col-sm mobile-rs">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
