@@ -73,7 +73,7 @@ const Navbar = () => {
                             >
 
                                 {industry}
-                                <svg style={{marginLeft:'13px'}} xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg>
+                                <svg className='arrows-industries' style={{marginLeft:'13px'}} xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368"><path d="M215.39-180 180-215.39l474.36-474.35H361.9V-740H740v378.1h-50.26v-292.46L215.39-180Z" /></svg>
 
                             </div>
                         ))}

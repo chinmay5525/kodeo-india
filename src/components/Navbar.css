@@ -23,11 +23,12 @@
 }
 
 
-.icons-heading{
+.icons-heading {
   font-family: 'Aino', sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
 }
+
 /* Responsive breakpoints */
 @media screen and (max-width: 1200px) {
   .navbar {
@@ -260,13 +261,17 @@
     /* Hide locations grid */
   }
 
-  .icons-container{
+  .icons-container {
     margin-top: 2rem;
   }
 
-  .icons-heading{
+  .icons-heading {
     font-family: 'Aino', sans-serif;
     font-weight: 300;
     font-size: 0.95rem;
+  }
+
+  .arrows-industries {
+    display: none;
   }
 }
