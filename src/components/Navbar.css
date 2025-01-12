@@ -76,7 +76,7 @@
 }
 
 .navbar.menu-open {
-  background-color: none;
+  background-color: transparent;
 }
 
 /* Hamburger icon styles */
@@ -245,7 +245,9 @@
     height: 100vh;
     /* Ensure full height */
   }
-
+  .navbar.menu-open{
+    background-color: #EEE;
+  }
   .right-side {
     width: 100%;
     padding: 4rem 2rem;
