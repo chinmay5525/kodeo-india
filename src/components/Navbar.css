@@ -47,8 +47,9 @@
 
 @media screen and (max-width: 480px) {
   .navbar {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    padding-right:1rem;
   }
 
   .kodeo_icon {
@@ -75,7 +76,7 @@
 }
 
 .navbar.menu-open {
-  background-color: transparent;
+  background-color: none;
 }
 
 /* Hamburger icon styles */
