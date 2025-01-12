@@ -1182,7 +1182,12 @@
   border-radius: 50%;
   animation: floatDown 8s linear infinite;
 }
-
+.fixed-top{
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 
 .headline {
   font-size: 6rem;
