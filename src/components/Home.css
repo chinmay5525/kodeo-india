@@ -285,7 +285,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0rem;
-  padding-right: 20rem;
+
   /* Adds extra space on the right */
 
   text-align: center;
@@ -1226,7 +1226,7 @@
 }
 
 .logo-container {
-  height: 60px;
+  height: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
