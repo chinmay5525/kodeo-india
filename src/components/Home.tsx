@@ -1,6 +1,4 @@
 import './Home.css'
-import ImageOne from '../assets/image.png'
-import SectorOne from '../assets/sectors/SectorOne.jpg'
 import SectorTwo from '../assets/sectors/SectorTwo.jpg'
 import SectorThree from '../assets/sectors/SectorThree.jpg'
 import WorkOne from '../assets/work/WorkOne.jpg'
@@ -14,6 +12,15 @@ import UAE from '../assets/flags/uae.png'
 import Russia from '../assets/flags/russia.png'
 import RSA from '../assets/flags/rsa.png'
 import Kazakstan from '../assets/flags/kz.png'
+
+import SourceCodeIcon from '../assets/services-icons/service.png';
+import PeopleFillIcon from '../assets/services-icons/team.png';
+import ShieldFillCheckIcon from '../assets/services-icons/cyber.png';
+import CodeSlashIcon from '../assets/services-icons/dev.png';
+import PhoneFillIcon from '../assets/services-icons/mobile.png';
+import CloudFillIcon from '../assets/services-icons/cloud.png';
+import EmailIcon from '../assets/services-icons/email.png'
+
 // Define types for tab content
 interface TabContent {
     title: string;
@@ -28,12 +35,66 @@ interface TabsContent {
 
 import { useEffect, useState } from 'react'
 const Home = () => {
-    const serviceRows = [
-        ['UI/UX Design', 'Mobile Applications Development', 'Paid Social', 'Branding', 'Design Audit'],
-        ['Website Design and Development', 'Digital Management', 'Platform Consulting'],
-        ['Explainer Videos', 'Mobile App Design', '3D Illustrations', 'Motion Design System'],
-        ['Illustrations and Iconography']
+    const solutions = [
+        {
+            icon: SourceCodeIcon,
+            title: "Managed Services",
+            description: "Free up your internal resources to focus on the business by letting us handle day to day support services, management, and monitoring of your IT."
+        },
+        {
+            icon: PeopleFillIcon,
+            title: "IT Consulting & Advisory",
+            description: "The right technology, implemented properly, appropriately managed and monitored, can lead to significant gains in growth"
+        },
+        {
+            icon: ShieldFillCheckIcon,
+            title: "Cyber Security",
+            description: "Our experts can identify vulnerabilities, assess risks, and implement robust security measures to safeguard your systems and data."
+        },
+        {
+            icon: CodeSlashIcon,
+            title: "Web Development",
+            description: "Our web development services can help you establish an impactful online presence and reach your target audience effectively."
+        },
+        {
+            icon: PhoneFillIcon,
+            title: "Mobile Development",
+            description: "We can help you create a customized mobile app that aligns with your brand and goals, with expertise in various mobile platforms."
+        },
+        {
+            icon: CloudFillIcon,
+            title: "Cloud Services",
+            description: "With our expertise in cloud technologies, we can help you find the right cloud solutions that meet your business needs and goals."
+        }
     ];
+
+
+    const industries = [
+        {
+          name: 'Industry & Manufacturing',
+          icon: '/path/to/industry-icon.jpg'  // Replace with actual image path
+        },
+        {
+          name: 'Transportation & Logistics',
+          icon: '/path/to/transport-icon.jpg'  // Replace with actual image path
+        },
+        {
+          name: 'Healthcare',
+          icon: '/path/to/healthcare-icon.jpg'  // Replace with actual image path
+        },
+        {
+          name: 'Banks & Insurance',
+          icon: '/path/to/bank-icon.jpg'  // Replace with actual image path
+        },
+        {
+          name: 'Consulting Providers',
+          icon: '/path/to/consulting-icon.jpg'  // Replace with actual image path
+        },
+        {
+          name: 'Non-Profit',
+          icon: '/path/to/nonprofit-icon.jpg'  // Replace with actual image path
+        }
+      ];
 
     const stats = [
         { number: "1B+", label: "Lives Touched" },
@@ -320,7 +381,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='services-section-full'>
+            {/* <section className='services-section-full'>
                 <div className="container service-section">
                     <div className="row">
                         <div className="col-12 p-0">
@@ -349,109 +410,67 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            <section className='case-study-section'>
-                <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 15px" }} className="d-flex justify-content-between align-items-center mb-4">
-                    <h2 className='case-heading'>Case Studies</h2>
-                    <button className="btn btn-danger rounded-pill">See All</button>
-                </div>
-
-                <div style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 0" }}>
-                    {/* Header Section */}
-
-                    {/* First Row */}
-                    <div className="row g-4 align-items-center">
-                        {/* Left: Two Boxes Side by Side */}
-                        <div className="col-md-8">
-                            <div className="d-flex case-study-cols gap-4">
-                                <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
-                                <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
-                            </div>
-                        </div>
-                        {/* Right: Two Headings with Text */}
-                        <div className="col-md-4">
-                            <div className="mb-5">
-                                <h5 className='case-studies-heading'>Transforming the Smart City Vision: Lucknow AI City</h5>
-
-                                <p className='text-muted'>
-                                    Kodeo partnered with Lucknow AI City to design an intuitive digital platform that reflects the city's forward-thinking vision. Our team crafted a clean, user-centric interface that makes complex data easily accessible for residents and stakeholders.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 className='case-studies-heading'>Innovating for Social Impact: Kumbathon’s Digital Transformation</h5>
-
-                                < p className='text-muted'>
-                                    For Kumbathon, an initiative focused on solving social challenges, Kodeo created a vibrant and engaging online presence. By aligning the branding with the spirit of innovation, we developed a platform that effectively communicates Kumbathon’s mission, showcases its projects, and attracts collaborators.
-                                </p>
-                            </div>
-                        </div>
+            <section className="solutions-section">
+                <div className="container">
+                    <div className="section-header text-center">
+                        <h2 className="title">Solutions</h2>
                     </div>
 
-                    {/* Second Row */}
-                    <div className="row g-4 pt-5 align-items-center">
-                        {/* Left: Two Headings with Text */}
-                        <div className="col-md-4 ">
-                            <div className="mb-5">
-                                <h5 className='case-studies-heading'>Revolutionizing Banking Experiences: Utkarsh Small Finance Bank</h5>
-
-                                <p className='text-muted'>
-                                    Kodeo collaborated with Utkarsh Small Finance Bank to enhance their digital banking platforms. Through user research, we identified key pain points and reimagined the user journey for their mobile app and website.
-                                </p>
+                    <div className="row g-4">
+                        {solutions.map((solution, index) => (
+                            <div key={index} className="col-md-6 col-lg-4">
+                                <div className="solution-card">
+                                    <div className="icon-wrapper">
+                                        <img src={solution.icon} alt={`${solution.title} icon`} className="solution-icon" />
+                                    </div>
+                                    <p className="card-title">{solution.title}</p>
+                                    <p className="card-description">{solution.description}</p>
+                                    <a href="#" className="learn-more-2">Learn more</a>
+                                </div>
                             </div>
-                            <div>
-                                <h5 className='case-studies-heading'>Transforming Healthcare Access: Fortis Mobile App Revamp</h5>
-
-                                <p className='text-muted'>
-                                    Kodeo redesigned the Fortis Hospitals mobile app to provide a more user-friendly and comprehensive patient experience. From online appointment scheduling to accessing medical records and teleconsultations, the revamped app prioritized patient convenience.
-                                </p>
-                            </div>
-                        </div>
-                        {/* Right: Two Boxes Side by Side */}
-                        <div className="col-md-8">
-                            <div className="d-flex  case-study-cols gap-4">
-                                <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
-                                <div className="bg-light flex-fill" style={{ height: "450px" }}></div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
 
-                    {/* Third Row */}
-                    <div className="row g-4  pt-5">
-                        {/* Three Boxes */}
-                        <div className="col-md-4">
-                            <div className="bg-light mb-3" style={{ height: "250px" }}></div>
-                            <h5 className='case-studies-heading'>Optimizing Logistics: Adani Group’s Supply Chain Dashboard</h5>
-                            <p className='text-muted'>Kodeo developed a cutting-edge supply chain management dashboard for the Adani Group. By providing real-time insights, predictive analytics, and intuitive navigation, we enabled the Adani team to optimize logistics and enhance operational efficiency.
-
-                            </p>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="bg-light mb-3" style={{ height: "250px" }}></div>
-                            <h5 className='case-studies-heading'>Designing for the Metaverse</h5>
-
-                            <p className='text-muted'>
-                                Creating intuitive and engaging interfaces for the metaverse
-                                requires innovation.
-                            </p>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="bg-light mb-3" style={{ height: "250px" }}></div>
-
-                            <h5 className='case-studies-heading'>Inclusive Digital Spaces</h5>
-                            <p className='text-muted'>
-                                Designing digital spaces that are accessible to everyone fosters
-                                inclusivity.
-                            </p>
-                        </div>
+                    <div className="text-center mt-5">
+                        <button className="subscribe-btn">View All Solutions</button>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <img src={ImageOne} alt="fireSpot" loading="lazy" className="responsive-image" />
+            <section className="industry-section py-5">
+                <div className="container">
+                    <div className="section-header text-center mb-5">
+                        <h2 className="main-title">
+                            Solving IT challenges in every<br />industry, every day.
+                        </h2>
+                    </div>
+
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-8">
+                            <div className="industry-tags d-flex flex-wrap justify-content-center gap-3">
+                                {industries.map((industry, index) => (
+                                    <div key={index} className="industry-tag">
+                                        <img
+                                            src={industry.icon}
+                                            alt={industry.name}
+                                            className="industry-icon"
+                                        />
+                                        <span>{industry.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="text-center mt-4">
+                        <a href="#" className="view-all-link">View All Industries</a>
+                    </div>
+                </div>
             </section>
 
+{/* 
             <section className='industries-color'>
                 <div className='d-flex industries-wrapper'>
                     <div className='heading-container' style={{ flex: '1 1 50%', backgroundColor: '#F7F4F2' }}>
@@ -526,7 +545,7 @@ const Home = () => {
             </section>
 
 
-
+ */}
 
 
 
@@ -571,7 +590,7 @@ const Home = () => {
 
 
             <section className="location-section">
-                <div>
+                <div className='container'>
                     <h1 className="locations">
                         Culture-Driven UI/UX <br />
                         & Development Excellence
@@ -734,12 +753,14 @@ const Home = () => {
                 <div className='container companies-container'>
                     <div className='content-wrapper'>
                         <div className='text-content'>
+                        <img className='email-icon' src={EmailIcon}/>
                             <h1 className='headline-2'>
                                 Tailored to deliver the best for your <br></br>business
                             </h1>
                             <p className='description'>A flexible and adaptive process that helps<br /> businesses launch and scale quickly.</p>
                         </div>
                         <div className='subscription-area'>
+
                             <input
                                 type='email'
                                 className='email-field'
@@ -756,18 +777,12 @@ const Home = () => {
             <section className='sectors-section'>
                 <div>
                     <div>
-                        <h1 className='sectors'>Helping Governments, Industries and Public Sectors</h1>
+                        <h1 className='sectors'>Blogs</h1>
                     </div>
                     <div>
                         <div className="container">
                             <div className="row sectors-row">
-                                <div className="col-sm mobile-rs">
-                                    <img src={SectorOne} alt="fireSpot" loading="lazy" className="sector-image" />
-                                    <h5 className='sectors-subhead'>Governments</h5>
-                                    <p className='text-muted'>The metaverse is a virtual world where users interact with each other as avatars in a 3D space. We also help the governments to have the same. </p>
-                                    <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
-
-                                </div>
+                              
                                 <div className="col-sm mobile-rs">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
@@ -775,7 +790,7 @@ const Home = () => {
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
-                                
+
                                 <div className="col-sm mobile-rs">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
@@ -783,7 +798,7 @@ const Home = () => {
                                     <button className="learn-more-2">Learn More <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#5f6368"><path d="M222.15-180 180-222.15 637.85-680H360v-60h380v380h-60v-277.85L222.15-180Z" /></svg></button>
 
                                 </div>
-                                  
+
                                 <div className="col-sm mobile-rs">
                                     <img src={SectorThree} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Industries</h5>
@@ -797,9 +812,10 @@ const Home = () => {
                 </div>
             </section>
             <section className='contact-section'>
-                <div className='contact-section-flex'>
+                <div className='container contact-section-flex'>
                     <div>
                         <h1 className='contact'>Let's make cool products <br /> together</h1>
+                        <p className='contact-subheading'>We’re happy to answer any questions you may have and help you determine which of our services best fit your needs.</p>
                     </div>
                     <div className="contact-form-wrapper">
                         <div className="container py-5">
