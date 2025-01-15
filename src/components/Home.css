@@ -254,7 +254,19 @@
   display: flex;
   color: #fff;
 }
+.subscribe-icons{
+  width: 45px;
+  margin-bottom: 1rem;
+  height: auto;
+}
 
+
+.subscribe-text{
+  font-family: 'Aino', sans-serif;
+  color: #444444;
+  font-weight: 300;
+  font-size: 16px;
+}
 .contact-subheading {
   font-size: 18px;
   color: #fff;
@@ -1393,9 +1405,6 @@ a:hover{
   animation: floatDown 8s linear infinite;
 }
 
-.main-content {
-  margin-top: 60px;
-}
 
 .headline {
   font-size: 6rem;

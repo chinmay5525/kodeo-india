@@ -77,6 +77,34 @@ const Navbar = () => {
                             </div>
                         ))}
                     </div>
+                    {/* <div>
+                        <div className="container mb-5">
+                            <div className="row">
+                                <div className="col-sm">
+                                    <div className='mt-4'>
+                                        <img className='subscribe-icons' src={LocationIcon} />
+                                        <p className='subscribe-text'>1st Formations Limited <br></br>
+                                            Registered in England & Wales<br></br>
+                                            at 71-75, Shelton Street, Covent Garden, <br></br>London, WC2H 9JQ</p>
+                                    </div>
+
+                                </div>
+                                <div className="col-sm">
+                                    <div className='mt-4'>
+                                        <img className='subscribe-icons' src={PhoneIcon} />
+                                        <p className='subscribe-text'>+44 77044 06011</p>
+                                    </div>
+                                </div>
+
+                                <div className="col-sm">
+                                    <div className='mt-4'>
+                                        <img className='subscribe-icons' src={PhoneIcon} />
+                                        <p className='subscribe-text'>+44 77044 06011</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
                     <div className='icons-container'>
                         <p className='icons-heading'>We are available on</p>
                         <div className='social-icons'>
@@ -108,6 +136,7 @@ const Navbar = () => {
                         ))}
                     </div>
 
+                
                     {/* Locations */}
                     <div className="locations-grid">
                         {locations.map((location, index) => (

@@ -21,6 +21,7 @@ import PhoneFillIcon from '../assets/services-icons/mobile.png';
 import CloudFillIcon from '../assets/services-icons/cloud.png';
 import EmailIcon from '../assets/services-icons/email.png'
 
+
 // Define types for tab content
 interface TabContent {
     title: string;
@@ -71,30 +72,30 @@ const Home = () => {
 
     const industries = [
         {
-          name: 'Industry & Manufacturing',
-          icon: '/path/to/industry-icon.jpg'  // Replace with actual image path
+            name: 'Industry & Manufacturing',
+            icon: '/path/to/industry-icon.jpg'  // Replace with actual image path
         },
         {
-          name: 'Transportation & Logistics',
-          icon: '/path/to/transport-icon.jpg'  // Replace with actual image path
+            name: 'Transportation & Logistics',
+            icon: '/path/to/transport-icon.jpg'  // Replace with actual image path
         },
         {
-          name: 'Healthcare',
-          icon: '/path/to/healthcare-icon.jpg'  // Replace with actual image path
+            name: 'Healthcare',
+            icon: '/path/to/healthcare-icon.jpg'  // Replace with actual image path
         },
         {
-          name: 'Banks & Insurance',
-          icon: '/path/to/bank-icon.jpg'  // Replace with actual image path
+            name: 'Banks & Insurance',
+            icon: '/path/to/bank-icon.jpg'  // Replace with actual image path
         },
         {
-          name: 'Consulting Providers',
-          icon: '/path/to/consulting-icon.jpg'  // Replace with actual image path
+            name: 'Consulting Providers',
+            icon: '/path/to/consulting-icon.jpg'  // Replace with actual image path
         },
         {
-          name: 'Non-Profit',
-          icon: '/path/to/nonprofit-icon.jpg'  // Replace with actual image path
+            name: 'Non-Profit',
+            icon: '/path/to/nonprofit-icon.jpg'  // Replace with actual image path
         }
-      ];
+    ];
 
     const stats = [
         { number: "1B+", label: "Lives Touched" },
@@ -470,7 +471,7 @@ const Home = () => {
                 </div>
             </section>
 
-{/* 
+            {/* 
             <section className='industries-color'>
                 <div className='d-flex industries-wrapper'>
                     <div className='heading-container' style={{ flex: '1 1 50%', backgroundColor: '#F7F4F2' }}>
@@ -753,7 +754,7 @@ const Home = () => {
                 <div className='container companies-container'>
                     <div className='content-wrapper'>
                         <div className='text-content'>
-                        <img className='email-icon' src={EmailIcon}/>
+                            <img className='email-icon' src={EmailIcon} />
                             <h1 className='headline-2'>
                                 Tailored to deliver the best for your <br></br>business
                             </h1>
@@ -782,7 +783,7 @@ const Home = () => {
                     <div>
                         <div className="container">
                             <div className="row sectors-row">
-                              
+
                                 <div className="col-sm mobile-rs">
                                     <img src={SectorTwo} alt="fireSpot" loading="lazy" className="sector-image" />
                                     <h5 className='sectors-subhead'>Public Sectors</h5>
@@ -816,6 +817,7 @@ const Home = () => {
                     <div>
                         <h1 className='contact'>Let's make cool products <br /> together</h1>
                         <p className='contact-subheading'>We’re happy to answer any questions you may have and help you determine which of our services best fit your needs.</p>
+
                     </div>
                     <div className="contact-form-wrapper">
                         <div className="container py-5">
