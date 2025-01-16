@@ -21,6 +21,12 @@ import PhoneFillIcon from '../assets/services-icons/mobile.png';
 import CloudFillIcon from '../assets/services-icons/cloud.png';
 import EmailIcon from '../assets/services-icons/email.png'
 
+import CostEffective from '../assets/services-icons/growth.png';
+import InnovativeTechnology from '../assets/services-icons/mobile.png';
+import IndustryExperts from '../assets/services-icons/technology.png';
+import Scalability from '../assets/services-icons/scale.png'
+
+
 
 // Define types for tab content
 interface TabContent {
@@ -589,7 +595,43 @@ const Home = () => {
                 </div>
             </section>
 
+            <section>
+                <div className="container features-container">
+                    <div className="row">
 
+                        <div className="col-sm">
+                            <img className='features-icons' src={CostEffective} />
+                            <p className='features-heading'>Cost Effective</p>
+                            <p className='features-subheading text-muted'>We offer affordable IT solutions that help you reduce costs and improve your bottom line.</p>
+
+                        </div>
+                        <div className="col-sm">
+                            <img className='features-icons' src={InnovativeTechnology} />
+                            <p className='features-heading'>Innovative Technology
+                            </p>
+                            <p className='features-subheading text-muted'>We stay up-to-date with the latest technology trends and offer innovative solutions that help you stay ahead of the competition.
+
+                            </p>
+                        </div>
+                        <div className="col-sm">
+                            <img className='features-icons' src={IndustryExperts} />
+                            <p className='features-heading'>Industry Expertise</p>
+                            <p className='features-subheading text-muted'>We specialize in serving specific industries, such as healthcare, finance, or manufacturing, and offer tailored solutions that meet your unique needs.
+
+                            </p>                        </div>
+                        <div className="col-sm">
+                            <img className='features-icons' src={Scalability} />
+                            <p className='features-heading'>Scalability</p>
+                            <p className='features-subheading text-muted'>Our solutions are scalable and can grow with your business, ensuring that you get the most value out of your investment.</p>
+                        </div>
+                        <hr style={{ borderColor: '#00000026' }} />
+
+
+
+                        <a href="#" className="view-all-link-2">About Kodeo</a>
+                    </div>
+                </div>
+            </section>
             <section className="location-section">
                 <div className='container'>
                     <h1 className="locations">

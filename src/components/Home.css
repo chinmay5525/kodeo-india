@@ -254,19 +254,21 @@
   display: flex;
   color: #fff;
 }
-.subscribe-icons{
+
+.subscribe-icons {
   width: 45px;
   margin-bottom: 1rem;
   height: auto;
 }
 
 
-.subscribe-text{
+.subscribe-text {
   font-family: 'Aino', sans-serif;
   color: #444444;
   font-weight: 300;
   font-size: 16px;
 }
+
 .contact-subheading {
   font-size: 18px;
   color: #fff;
@@ -291,13 +293,14 @@
 }
 
 
-a{
+a {
   color: #444444;
 }
 
-a:hover{
+a:hover {
   color: #444444;
 }
+
 .section-header .title {
   font-size: 36px;
   font-weight: 700;
@@ -317,7 +320,7 @@ a:hover{
   margin-bottom: 20px;
 }
 
-.solution-icon{
+.solution-icon {
   height: 60px;
   width: auto;
 }
@@ -438,32 +441,47 @@ a:hover{
   text-decoration: underline;
 }
 
+.view-all-link-2 {
+  font-family: 'Aino', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.view-all-link-2:hover {
+  text-decoration: underline;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .main-title {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .industry-tags {
-      justify-content: center;
+    justify-content: center;
   }
 
   .industry-tag {
-      padding: 6px 16px;
+    padding: 6px 16px;
   }
 }
 
 @media (max-width: 576px) {
   .main-title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .industry-tag {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
-.email-icon{
+.email-icon {
   margin-bottom: 2rem;
   height: 70px;
   width: auto;
@@ -929,6 +947,29 @@ a:hover{
 
   .case-studies-heading {
     font-size: 18px;
+  }
+
+  .features-container {
+    padding: var(--mobile-padding);
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .features-heading {
+    font-size: 1.1rem !important;
+    font-weight: 500;
+    margin-bottom: 5px!important;
+    margin-top: 1rem!important;
+  }
+
+  .features-subheading {
+    font-size: 15px !important;
+
+  }
+
+  .features-icons{
+    margin-top: 1.5rem;
+
   }
 }
 
@@ -1432,6 +1473,28 @@ a:hover{
   }
 }
 
+.features-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.features-heading {
+  margin-top: 1.5rem;
+  font-family: 'Aino', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.features-subheading {
+  font-family: 'Aino', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.features-icons {
+  height: 60px;
+  width: auto;
+}
 
 /* Base styles */
 .announcement-tab {
@@ -1537,4 +1600,5 @@ a:hover{
   .announcement-meta {
     font-size: 0.8rem;
   }
+
 }
